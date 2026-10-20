@@ -5,13 +5,16 @@ import { motion } from "framer-motion";
 
 export function HeroSection() {
     return (
-        <motion.section className="flex flex-col items-center min-h-screen justify-center bg-black bg-[url('/hero-image.png')] bg-cover bg-center bg-no-repeat px-4 w-full"
+        <motion.section className="relative flex flex-col items-center min-h-screen justify-center bg-black bg-[url('/hero-bg.webp')] bg-cover bg-center bg-no-repeat px-4 w-full"
             initial={{ opacity: 0.4 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
         >
-            <motion.div className="bg-white/20 backdrop-blur text-sm text-white pl-2 pr-4 py-1 rounded-full flex items-center gap-2 border border-white/20"
+            {/* Dark overlay with low opacity */}
+            <div className="absolute inset-0 bg-black/20" />
+
+            <motion.div className="relative z-10 bg-white/20 backdrop-blur text-sm text-white pl-2 pr-4 py-1 rounded-full flex items-center gap-2 border border-white/20"
                 initial={{ y: -20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
@@ -20,7 +23,7 @@ export function HeroSection() {
                 <HomeIcon size={16} />
                 <p>Helping Families Find Their Dream Homes</p>
             </motion.div>
-            <motion.h1 className="text-5xl md:text-[64px] text-zinc-50 font-medium max-w-3xl text-center mt-5 leading-tight"
+            <motion.h1 className="relative z-10 text-5xl md:text-[64px] text-zinc-50 font-medium max-w-3xl text-center mt-5 leading-tight"
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
@@ -28,7 +31,7 @@ export function HeroSection() {
             >
                 Helping You Find the Perfect Place to Call Home
             </motion.h1>
-            <motion.p className="text-white max-w-120 text-center mt-3"
+            <motion.p className="relative z-10 text-white max-w-120 text-center mt-3"
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
@@ -36,7 +39,7 @@ export function HeroSection() {
             >
                 Discover exceptional properties, expert advice and a seamless buying or selling experience tailored to your goals.
             </motion.p>
-            <motion.div className="flex items-center gap-4 mt-8"
+            <motion.div className="relative z-10 flex items-center gap-4 mt-8"
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}

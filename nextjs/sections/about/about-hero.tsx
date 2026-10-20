@@ -6,7 +6,7 @@ import { Building2 } from "lucide-react";
 export function AboutHero() {
     return (
         <motion.section
-            className="flex flex-col items-center min-h-[70vh] justify-center bg-black bg-[url('/hero-image.png')] bg-cover bg-center bg-no-repeat px-4 w-full"
+            className="flex flex-col items-center min-h-[70vh] justify-center bg-black bg-[url('/hero-image.png')] bg-cover bg-center bg-no-repeat px-4 w-full pt-24 pb-20"
             initial={{ opacity: 0.4 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}

@@ -65,7 +65,7 @@ export function Contact() {
                                 >
                                     EMAIL ADDRESS
                                 </motion.label>
-                                <motion.input type="email" placeholder="michael@prebuiltUI.com" className="w-full border border-zinc-200 rounded-sm px-4 py-2.5 text-xs text-zinc-800 placeholder-zinc-400 focus:outline-none focus:border-zinc-300 transition-colors" 
+                                <motion.input type="email" placeholder="info@indusenclave.com" className="w-full border border-zinc-200 rounded-sm px-4 py-2.5 text-xs text-zinc-800 placeholder-zinc-400 focus:outline-none focus:border-zinc-300 transition-colors" 
                                     initial={{ y: 50, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
                                     viewport={{ once: true }}
@@ -85,7 +85,7 @@ export function Contact() {
                                 >
                                     PHONE NUMBER
                                 </motion.label>
-                                <motion.input type="tel" placeholder="E.g. +123 456 789 00" className="w-full border border-zinc-200 rounded-sm px-4 py-2.5 text-xs text-zinc-800 placeholder-zinc-400 focus:outline-none focus:border-zinc-300 transition-colors" 
+                                <motion.input type="tel" placeholder="+92 329 302 3156" className="w-full border border-zinc-200 rounded-sm px-4 py-2.5 text-xs text-zinc-800 placeholder-zinc-400 focus:outline-none focus:border-zinc-300 transition-colors" 
                                     initial={{ y: 50, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
                                     viewport={{ once: true }}
@@ -165,8 +165,10 @@ export function Contact() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                             >
-                                <p>Monday-Friday: 10 AM - 6 PM</p>
-                                <p>Saturday: 10 AM - 4 PM</p>
+                                <p className="text-xs text-zinc-300">Osif Arcade, Gulshan-e-Iqbal, Karachi</p>
+                                <p className="text-xs text-zinc-300">+92 329 302 3156 / +92 316 822 8918</p>
+                                <p className="mt-1">Mon - Fri: 10 AM - 6 PM</p>
+                                <p>Sat: 10 AM - 4 PM</p>
                             </motion.div>
                         </div>
                     </div>
