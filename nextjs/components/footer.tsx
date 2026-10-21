@@ -95,6 +95,14 @@ export function Footer() {
                                 >
                                     Villas &amp; Floor Plans
                                 </motion.a>
+                                <motion.a href="/inquiry" className="hover:text-white transition-colors duration-200"
+                                    initial={{ y: 50, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
+                                >
+                                    Property Inquiry
+                                </motion.a>
                                 <motion.a href="#" className="hover:text-white transition-colors duration-200"
                                     initial={{ y: 50, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
