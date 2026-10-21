@@ -25,7 +25,9 @@ export function Navbar() {
                 {/* Desktop links */}
                 <div className="hidden md:flex items-center gap-6 md:gap-10 text-sm">
                     <a href="/" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Home</a>
+                    <a href="/plots" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Plots</a>
                     <a href="/villas" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Villas</a>
+                    <a href="/gallery" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Gallery</a>
                     <a href="/about" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>About</a>
                     <a href="/contact" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Contact</a>
                 </div>
@@ -44,7 +46,9 @@ export function Navbar() {
             {/* Mobile Menu Overlay */}
             <div className={`${mobileOpen ? 'max-md:w-full' : 'max-md:w-0'} md:hidden max-md:fixed max-md:top-0 max-md:z-50 max-md:left-0 max-md:transition-all max-md:duration-300 max-md:overflow-hidden max-md:h-full max-md:bg-black/90 max-md:backdrop-blur max-md:flex-col max-md:justify-center flex items-center gap-6 md:gap-10 text-sm`}>
                 <a href="/" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Home</a>
+                <a href="/plots" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Plots</a>
                 <a href="/villas" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Villas</a>
+                <a href="/gallery" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Gallery</a>
                 <a href="/about" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">About</a>
                 <a href="/contact" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Contact</a>
 
