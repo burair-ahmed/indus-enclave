@@ -23,12 +23,13 @@ export function Navbar() {
                 </a>
 
                 {/* Desktop links */}
-                <div className="hidden md:flex items-center gap-5 lg:gap-8 text-sm">
+                <div className="hidden md:flex items-center gap-4 lg:gap-7 text-sm">
                     <a href="/" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Home</a>
                     <a href="/plots" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Plots</a>
                     <a href="/villas" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Villas</a>
                     <a href="/gallery" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Gallery</a>
                     <a href="/inquiry" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Inquiry</a>
+                    <a href="/faq" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>FAQ</a>
                     <a href="/about" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>About</a>
                     <a href="/contact" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Contact</a>
                 </div>
@@ -51,6 +52,7 @@ export function Navbar() {
                 <a href="/villas" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Villas</a>
                 <a href="/gallery" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Gallery</a>
                 <a href="/inquiry" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Inquiry</a>
+                <a href="/faq" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">FAQ</a>
                 <a href="/about" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">About</a>
                 <a href="/contact" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Contact</a>
 

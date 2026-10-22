@@ -195,7 +195,7 @@ export function Footer() {
                                 >
                                     Contact Us
                                 </motion.a>
-                                <motion.a href="/contact#contact-form" className="hover:text-white transition-colors duration-200"
+                                <motion.a href="/faq" className="hover:text-white transition-colors duration-200"
                                     initial={{ y: 50, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
                                     viewport={{ once: true }}
