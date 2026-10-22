@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
     CreditCard,
@@ -74,8 +75,27 @@ export function PlotsPaymentPlans() {
                         className="bg-white p-7 rounded-3xl border border-zinc-200 shadow-sm relative overflow-hidden flex flex-col justify-between"
                     >
                         <div>
-                            <div className="size-12 rounded-2xl bg-zinc-100 flex items-center justify-center text-zinc-800 mb-5">
-                                <Coins size={24} />
+                            <div className="flex items-center justify-between mb-5">
+                                <div className="size-12 rounded-2xl bg-zinc-100 flex items-center justify-center text-zinc-800">
+                                    <Coins size={24} />
+                                </div>
+                                {currentPlot.dimensionImage.src && (
+                                    <a
+                                        href="#plot-dimensions"
+                                        className="flex items-center gap-2 px-2.5 py-1 rounded-lg bg-zinc-50 border border-zinc-200 hover:border-amber-400 transition-colors text-[11px] font-mono text-zinc-600 hover:text-zinc-900 group"
+                                        title="View layout dimension map"
+                                    >
+                                        <div className="relative size-7 rounded overflow-hidden bg-white border border-zinc-200 shrink-0">
+                                            <Image
+                                                src={currentPlot.dimensionImage.src}
+                                                alt={currentPlot.title}
+                                                fill
+                                                className="object-contain p-0.5"
+                                            />
+                                        </div>
+                                        <span>Layout: {currentPlot.dimensions.frontage} × {currentPlot.dimensions.depth}</span>
+                                    </a>
+                                )}
                             </div>
                             <span className="text-xs uppercase tracking-wider font-semibold text-zinc-400">
                                 Total Investment

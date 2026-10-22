@@ -119,20 +119,20 @@ export const plotsData: Record<"80-sq-yards" | "120-sq-yards", PlotData> = {
         description:
             "At Indus Enclave, we understand that your home is a reflection of your aspirations, and our pricing reflects this understanding. We offer transparent and competitive rates, coupled with flexible payment plans, ensuring that your dream of owning a luxurious home is attainable without financial stress. Investing in an Indus Enclave property means not just acquiring a house but securing your future, as our properties are designed to appreciate in value. Embark on the journey to your dream home with us, where your vision becomes a reality, and your investment is a step toward a prosperous future.",
         dimensions: {
-            frontage: "20'-0\"",
-            depth: "36'-0\"",
+            frontage: "30'-0\"",
+            depth: "24'-0\"",
             areaSqYds: "80 Sq. Yards",
             areaSqFt: "720 Sq. Ft",
-            aspectRatio: "1 : 1.8 Standard Residential",
+            aspectRatio: "1 : 0.8 Standard Residential",
             roadWidth: "40' - 60' Wide Carpeted Road",
             permittedFloors: "Ground + 1 Floor + Rooftop",
             constructionType: "Single Family Residential Villa / Duplex"
         },
         dimensionImage: {
-            src: "", // Ready for user's image
-            alt: "80 SQ.YDS Plot Dimension & Architectural Blueprint",
+            src: "/80_yards_plot.jpg",
+            alt: "80 SQ.YDS Plot Layout & Dimension Map - Indus Enclave",
             placeholderTitle: "80 SQ.YDS Plot Dimension Diagram",
-            placeholderSubtitle: "Standard Lot Size: 20' Frontage × 36' Depth (720 Sq.Ft) — Blueprint Space Reserved"
+            placeholderSubtitle: "Official Layout: 30' Frontage × 24' Depth (720 Sq.Ft) — Sunflower Block"
         },
         milestones: [
             {
@@ -220,20 +220,20 @@ export const plotsData: Record<"80-sq-yards" | "120-sq-yards", PlotData> = {
         description:
             "At Indus Enclave, we’re committed to making your dream home a reality without compromising on quality or comfort. Our pricing is designed to cater to a variety of budgets and preferences, ensuring that the perfect home is within your reach. With transparent, competitive rates and flexible payment plans, we prioritize your financial ease. Investing in an Indus Enclave property means investing in a bright and prosperous future, as our homes are crafted not just for today, but for generations to come. Explore our pricing options today and step into the world of Indus Enclave, where your dream home awaits.",
         dimensions: {
-            frontage: "24'-0\"",
-            depth: "45'-0\"",
+            frontage: "20'-0\"",
+            depth: "36'-0\"",
             areaSqYds: "120 Sq. Yards",
             areaSqFt: "1,080 Sq. Ft",
-            aspectRatio: "1 : 1.875 Executive Residential",
+            aspectRatio: "1 : 1.8 Executive Residential",
             roadWidth: "45' - 80' Wide Avenue",
             permittedFloors: "Ground + 1 Floor + Penthouse / Terrace",
             constructionType: "Executive Family Villa with Lawn & Car Porch"
         },
         dimensionImage: {
-            src: "", // Ready for user's image
-            alt: "120 SQ.YDS Plot Dimension & Architectural Blueprint",
+            src: "/120_yards_plot-1024x1024.jpeg",
+            alt: "120 SQ.YDS Plot Layout & Dimension Map - Indus Enclave",
             placeholderTitle: "120 SQ.YDS Plot Dimension Diagram",
-            placeholderSubtitle: "Standard Lot Size: 24' Frontage × 45' Depth (1,080 Sq.Ft) — Blueprint Space Reserved"
+            placeholderSubtitle: "Official Layout: 20' Frontage × 36' Depth (1,080 Sq.Ft) — Sunflower Block"
         },
         milestones: [
             {

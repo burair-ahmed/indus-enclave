@@ -10,6 +10,7 @@ import {
     CheckCircle2,
     ImageIcon,
     Maximize2,
+    X,
     Info,
     ArrowUpRight,
     MapPin,
@@ -20,6 +21,7 @@ import { plotsData } from "@/data/plots-data";
 
 export function PlotsDimensionSection() {
     const [selectedPlot, setSelectedPlot] = useState<"80-sq-yards" | "120-sq-yards">("80-sq-yards");
+    const [lightboxOpen, setLightboxOpen] = useState(false);
 
     const currentPlot = plotsData[selectedPlot];
     const { dimensions, dimensionImage } = currentPlot;
@@ -51,7 +53,7 @@ export function PlotsDimensionSection() {
                                     : "text-zinc-600 hover:text-zinc-900"
                             }`}
                         >
-                            80 SQ.YDS PLOT (20&apos; × 36&apos;)
+                            80 SQ.YDS PLOT (30&apos; × 24&apos;)
                         </button>
                         <button
                             onClick={() => setSelectedPlot("120-sq-yards")}
@@ -61,7 +63,7 @@ export function PlotsDimensionSection() {
                                     : "text-zinc-600 hover:text-zinc-900"
                             }`}
                         >
-                            120 SQ.YDS PLOT (24&apos; × 45&apos;)
+                            120 SQ.YDS PLOT (20&apos; × 36&apos;)
                         </button>
                     </div>
                 </div>
@@ -111,16 +113,37 @@ export function PlotsDimensionSection() {
                                 </div>
 
                                 {/* Image or Placeholder Slot */}
-                                <div className="relative z-10 flex-1 flex flex-col items-center justify-center py-6">
+                                <div className="relative z-10 flex-1 flex flex-col items-center justify-center py-4">
                                     {dimensionImage.src ? (
-                                        /* When user provides the image, it renders here seamlessly */
-                                        <div className="relative w-full h-full min-h-[340px] rounded-2xl overflow-hidden border border-zinc-700/60 shadow-2xl bg-zinc-950/60 flex items-center justify-center">
-                                            <Image
-                                                src={dimensionImage.src}
-                                                alt={dimensionImage.alt}
-                                                fill
-                                                className="object-contain p-4"
-                                            />
+                                        <div className="relative w-full flex flex-col items-center">
+                                            {/* White Card Container for the Diagram */}
+                                            <div
+                                                onClick={() => setLightboxOpen(true)}
+                                                className="group/img relative w-full max-w-md aspect-square bg-white rounded-2xl overflow-hidden border border-zinc-300 shadow-2xl flex items-center justify-center cursor-zoom-in transition-all duration-300 hover:border-amber-400 hover:shadow-amber-500/10"
+                                            >
+                                                <Image
+                                                    src={dimensionImage.src}
+                                                    alt={dimensionImage.alt}
+                                                    fill
+                                                    priority
+                                                    className="object-contain p-4 transition-transform duration-500 group-hover/img:scale-[1.03]"
+                                                />
+                                                {/* Hover Overlay */}
+                                                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity duration-300 flex items-center justify-center backdrop-blur-[2px]">
+                                                    <div className="bg-zinc-900/95 text-white px-4 py-2 rounded-full border border-zinc-700 flex items-center gap-2 text-xs font-semibold shadow-xl">
+                                                        <Maximize2 size={14} className="text-amber-400" />
+                                                        <span>Click to Enlarge</span>
+                                                    </div>
+                                                </div>
+                                                {/* Corner Badge */}
+                                                <div className="absolute top-3 left-3 bg-zinc-900/90 text-amber-300 text-[10px] font-mono font-semibold px-2.5 py-1 rounded-md border border-zinc-700/80 shadow">
+                                                    {currentPlot.title}
+                                                </div>
+                                            </div>
+                                            <p className="text-[11px] text-zinc-400 font-mono mt-3 text-center flex items-center gap-1.5">
+                                                <Maximize2 size={12} className="text-amber-400" />
+                                                <span>Click diagram to view full high-resolution map</span>
+                                            </p>
                                         </div>
                                     ) : (
                                         /* High-fidelity Architectural Blueprint Representation & Designated Image Slot */
@@ -278,6 +301,87 @@ export function PlotsDimensionSection() {
                             </div>
                         </div>
                     </motion.div>
+                </AnimatePresence>
+
+                {/* Full-Screen Lightbox Modal for Plot Layout */}
+                <AnimatePresence>
+                    {lightboxOpen && dimensionImage.src && (
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={() => setLightboxOpen(false)}
+                            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6"
+                        >
+                            <motion.div
+                                initial={{ scale: 0.9, opacity: 0 }}
+                                animate={{ scale: 1, opacity: 1 }}
+                                exit={{ scale: 0.9, opacity: 0 }}
+                                transition={{ type: "spring", damping: 25, stiffness: 300 }}
+                                onClick={(e) => e.stopPropagation()}
+                                className="relative bg-white rounded-3xl max-w-2xl w-full p-4 sm:p-6 shadow-2xl flex flex-col items-center"
+                            >
+                                {/* Top Bar */}
+                                <div className="w-full flex items-center justify-between pb-3 border-b border-zinc-200">
+                                    <div>
+                                        <span className="text-[11px] font-mono uppercase tracking-wider text-amber-600 font-semibold block">
+                                            Sunflower Block • Official Layout
+                                        </span>
+                                        <h3 className="text-zinc-900 font-bold text-lg">
+                                            {currentPlot.title} ({dimensions.frontage} × {dimensions.depth})
+                                        </h3>
+                                    </div>
+                                    <button
+                                        onClick={() => setLightboxOpen(false)}
+                                        className="size-9 rounded-full bg-zinc-100 hover:bg-zinc-200 text-zinc-700 flex items-center justify-center transition-colors cursor-pointer"
+                                        aria-label="Close modal"
+                                    >
+                                        <X size={18} />
+                                    </button>
+                                </div>
+
+                                {/* Plot Image */}
+                                <div className="relative w-full aspect-square max-h-[70vh] my-4 rounded-xl overflow-hidden bg-white flex items-center justify-center">
+                                    <Image
+                                        src={dimensionImage.src}
+                                        alt={dimensionImage.alt}
+                                        fill
+                                        priority
+                                        className="object-contain"
+                                    />
+                                </div>
+
+                                {/* Modal Footer with Switcher */}
+                                <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-3 pt-3 border-t border-zinc-200 text-xs">
+                                    <div className="flex items-center gap-2">
+                                        <button
+                                            onClick={() => setSelectedPlot("80-sq-yards")}
+                                            className={`px-3 py-1.5 rounded-lg font-medium transition-colors cursor-pointer ${
+                                                selectedPlot === "80-sq-yards"
+                                                    ? "bg-zinc-900 text-white"
+                                                    : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
+                                            }`}
+                                        >
+                                            80 SQ.YDS (30&apos; × 24&apos;)
+                                        </button>
+                                        <button
+                                            onClick={() => setSelectedPlot("120-sq-yards")}
+                                            className={`px-3 py-1.5 rounded-lg font-medium transition-colors cursor-pointer ${
+                                                selectedPlot === "120-sq-yards"
+                                                    ? "bg-zinc-900 text-white"
+                                                    : "bg-zinc-100 text-zinc-700 hover:bg-zinc-200"
+                                            }`}
+                                        >
+                                            120 SQ.YDS (20&apos; × 36&apos;)
+                                        </button>
+                                    </div>
+                                    <span className="text-zinc-500 font-mono">
+                                        Total Area: {dimensions.areaSqYds} ({dimensions.areaSqFt})
+                                    </span>
+                                </div>
+                            </motion.div>
+                        </motion.div>
+                    )}
                 </AnimatePresence>
             </div>
         </section>

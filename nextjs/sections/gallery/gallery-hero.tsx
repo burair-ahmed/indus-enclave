@@ -6,14 +6,14 @@ import { Images } from "lucide-react";
 export function GalleryHero() {
     return (
         <motion.section
-            className="flex flex-col items-center min-h-[70vh] justify-center bg-black bg-[url('/hero-image.png')] bg-cover bg-center bg-no-repeat px-4 w-full pt-24 pb-20"
+            className="relative overflow-hidden flex flex-col items-center min-h-[70vh] justify-center bg-zinc-900 bg-[url('/hero-image.png')] bg-cover bg-center bg-no-repeat px-4 w-full pt-24 pb-20"
             initial={{ opacity: 0.4 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
         >
             {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/30" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50 pointer-events-none" />
 
             <motion.div
                 className="relative z-10 bg-white/20 backdrop-blur text-sm text-white pl-2 pr-4 py-1 rounded-full flex items-center gap-2 border border-white/20"

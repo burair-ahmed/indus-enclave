@@ -5,9 +5,23 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 
-const categories = ["All", "Exteriors", "Interiors", "Amenities", "Community"];
+const categories = ["All", "Plots Layout", "Exteriors", "Interiors", "Amenities", "Community"];
 
 const galleryItems = [
+    {
+        src: "/80_yards_plot.jpg",
+        category: "Plots Layout",
+        title: "80 Sq. Yards Plot Dimension Map",
+        description: "Official 30' × 24' residential plot layout in Sunflower Block.",
+        span: "col-span-1 row-span-1",
+    },
+    {
+        src: "/120_yards_plot-1024x1024.jpeg",
+        category: "Plots Layout",
+        title: "120 Sq. Yards Plot Dimension Map",
+        description: "Official 20' × 36' executive plot layout in Sunflower Block.",
+        span: "col-span-1 row-span-1",
+    },
     {
         src: "/assets/galleryImage1.png",
         category: "Exteriors",
