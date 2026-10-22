@@ -23,10 +23,11 @@ export function Navbar() {
                 </a>
 
                 {/* Desktop links */}
-                <div className="hidden md:flex items-center gap-4 lg:gap-7 text-sm">
+                <div className="hidden md:flex items-center gap-3.5 lg:gap-6 text-sm">
                     <a href="/" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Home</a>
                     <a href="/plots" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Plots</a>
                     <a href="/villas" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Villas</a>
+                    <a href="/location" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Location</a>
                     <a href="/gallery" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Gallery</a>
                     <a href="/inquiry" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Inquiry</a>
                     <a href="/faq" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>FAQ</a>
@@ -34,7 +35,7 @@ export function Navbar() {
                     <a href="/contact" className={`transition-colors duration-500 ${scrolled ? "text-zinc-800 hover:text-zinc-600" : "text-white hover:text-white/90"}`}>Contact</a>
                 </div>
 
-                <a href="/inquiry" className={`hidden md:block px-6 py-2.5 rounded-[6px] text-sm font-medium cursor-pointer transition-all duration-500 ${scrolled ? "bg-zinc-900 text-white hover:bg-zinc-800 rounded-full" : "bg-zinc-50 text-zinc-800 hover:bg-zinc-200"}`}>
+                <a href="/inquiry" className={`hidden md:block px-5 py-2.5 rounded-[6px] text-sm font-medium cursor-pointer transition-all duration-500 ${scrolled ? "bg-zinc-900 text-white hover:bg-zinc-800 rounded-full" : "bg-zinc-50 text-zinc-800 hover:bg-zinc-200"}`}>
                     Inquire Now
                 </a>
 
@@ -50,6 +51,7 @@ export function Navbar() {
                 <a href="/" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Home</a>
                 <a href="/plots" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Plots</a>
                 <a href="/villas" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Villas</a>
+                <a href="/location" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Location</a>
                 <a href="/gallery" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Gallery</a>
                 <a href="/inquiry" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">Inquiry</a>
                 <a href="/faq" onClick={() => { setMobileOpen(false) }} className="text-white hover:text-white/90 text-lg transition-colors">FAQ</a>
