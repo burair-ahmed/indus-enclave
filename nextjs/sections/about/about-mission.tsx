@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -58,18 +58,21 @@ export function AboutMission() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.15, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                     >
-                        Indus Enclave was founded with one clear purpose — to make property ownership straightforward, transparent, and genuinely exciting. We started as a small boutique agency and grew into one of the region's most trusted names through decades of honest work.
+                        Indus Enclave is a prestigious flagship residential and commercial development by <strong className="text-zinc-900 font-semibold">Al-Ashraf Group Of Companies</strong>. Founded with one clear purpose — to make master-planned property ownership straightforward, legally certified, and genuinely attainable without financial stress.
                     </motion.p>
 
-                    <motion.p
-                        className="text-zinc-500 text-sm md:text-base mt-4 leading-relaxed"
-                        initial={{ y: 50, opacity: 0 }}
-                        whileInView={{ y: 0, opacity: 1 }}
+                    <motion.div
+                        className="mt-4 p-3.5 rounded-xl bg-zinc-50 border border-zinc-200/80 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-zinc-600"
+                        initial={{ opacity: 0, y: 15 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ delay: 0.25, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                     >
-                        Whether you are a first-time buyer, a seasoned investor, or a family in search of your forever home, our advisors bring local expertise and personal care to every step of your journey.
-                    </motion.p>
+                        <span className="font-semibold text-zinc-900">A Project Of Al-Ashraf Group Of Companies</span>
+                        <span className="text-zinc-300">•</span>
+                        <a href="tel:111274723" className="hover:text-amber-600 font-mono font-medium">UAN: 111-ASHRAF (274-723)</a>
+                        <span className="text-zinc-300">•</span>
+                        <a href="mailto:info@alashrafgoc.com" className="hover:text-amber-600">info@alashrafgoc.com</a>
+                    </motion.div>
 
                     <motion.button
                         className="mt-8 self-start bg-zinc-950 hover:bg-zinc-800 text-white px-7 py-3 rounded-full text-sm transition cursor-pointer"

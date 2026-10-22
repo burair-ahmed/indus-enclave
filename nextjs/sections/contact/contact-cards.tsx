@@ -78,6 +78,44 @@ export function ContactCards() {
                     </motion.p>
                 </div>
 
+                {/* Al-Ashraf Group of Companies Parentage Banner */}
+                <motion.div
+                    className="mb-10 bg-zinc-900 text-white rounded-2xl p-6 md:p-7 border border-zinc-800 shadow-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-6"
+                    initial={{ y: 30, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1, type: "spring", stiffness: 300, damping: 30 }}
+                >
+                    <div>
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-2 border border-amber-400/20">
+                            <span>A Project Of</span>
+                        </div>
+                        <h3 className="text-xl md:text-2xl font-bold text-white tracking-tight">
+                            Al-Ashraf Group Of Companies
+                        </h3>
+                        <p className="text-xs sm:text-sm text-zinc-400 mt-1">
+                            Sindh&apos;s premier multi-disciplinary group driving modern industrial, real estate, and infrastructure excellence.
+                        </p>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-3 shrink-0">
+                        <a
+                            href="tel:111274723"
+                            className="bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 transition font-mono"
+                        >
+                            <Phone size={15} />
+                            <span>111-ASHRAF (274-723)</span>
+                        </a>
+                        <a
+                            href="mailto:info@alashrafgoc.com"
+                            className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-4 py-2.5 rounded-xl text-xs sm:text-sm flex items-center gap-2 transition"
+                        >
+                            <Mail size={15} className="text-amber-400" />
+                            <span>info@alashrafgoc.com</span>
+                        </a>
+                    </div>
+                </motion.div>
+
                 {/* Cards Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {channels.map((channel, i) => (

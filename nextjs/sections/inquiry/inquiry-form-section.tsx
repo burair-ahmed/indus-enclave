@@ -431,6 +431,25 @@ export function InquiryFormSection() {
                                     <span>Direct Sales Desk</span>
                                 </div>
 
+                                {/* A Project Of Al-Ashraf Group Of Companies */}
+                                <div className="mb-4 p-3.5 rounded-2xl bg-white/5 border border-white/10 flex flex-col gap-1">
+                                    <span className="text-[10px] font-mono uppercase tracking-wider text-amber-400 font-semibold">
+                                        A Project Of
+                                    </span>
+                                    <h4 className="text-sm font-bold text-white">
+                                        Al-Ashraf Group Of Companies
+                                    </h4>
+                                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-zinc-300 pt-0.5">
+                                        <a href="tel:111274723" className="hover:text-amber-400 font-mono text-amber-300 font-medium">
+                                            UAN: 111-ASHRAF (274-723)
+                                        </a>
+                                        <span className="text-zinc-600">•</span>
+                                        <a href="mailto:info@alashrafgoc.com" className="hover:text-amber-400 text-zinc-300">
+                                            info@alashrafgoc.com
+                                        </a>
+                                    </div>
+                                </div>
+
                                 <h3 className="text-2xl font-bold text-white tracking-tight">
                                     Official Indus Enclave Property Desk
                                 </h3>
