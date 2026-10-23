@@ -1,152 +1,142 @@
-# Indus Enclave — Housing & Commercial Project
+# Indus Enclave — Real Estate Web Application
 
-> **A Flagship Project by Al-Ashraf Group of Companies**  
-> **Location:** M-9 Karachi–Hyderabad Motorway, Exit 8 Nooriabad, Sindh, Pakistan  
-> **Approvals:** Fully approved by **SBCA** (Sindh Building Control Authority) & **SDA** (Sehwan Development Authority)
+A modern, high-performance web application built for the **Indus Enclave Housing Project**. This platform serves as the digital portal for prospective buyers and investors to explore residential plots, villa floor plans, payment schedules, location connectivity, site video updates, and direct inquiry booking.
 
 ---
 
-## 🌟 Overview
+## 📌 Project Overview
 
-**Indus Enclave** is a premier master-planned residential and commercial development located directly on the **M-9 Motorway at Exit 8 Nooriabad**. Designed for both modern family living and high-return investment, the society combines complete legal security, underground utilities, carpeted roads, parks, masjids, educational academies, and healthcare facilities with flexible payment plans.
+This project is a full-featured real estate web platform developed with modern web standards. It is engineered to provide a seamless, responsive, and visually rich browsing experience across all device form factors.
 
-This repository contains the official modern web application for Indus Enclave, built with **Next.js 16 (Turbopack)**, **React 19**, **TypeScript**, and **Tailwind CSS**.
-
----
-
-## 🏡 Project Highlights & Offerings
-
-### 1. Sunflower Block Residential Plots
-- **Plot Sizes:**
-  - **80 SQ. YDS** — Frontage 30'-0" × Depth 24'-0" (720 Sq. Ft)
-  - **120 SQ. YDS** — Frontage 20'-0" × Depth 36'-0" (1,080 Sq. Ft)
-- **Payment Structure:**
-  - **3 Years (36 Months)** Easy Monthly Installment Plan
-  - Booking starting from just **Rs. 25,000**
-  - Monthly installments from **Rs. 10,000**
-- **Plot Categories & Extra Charges:**
-  - West Open (+10%)
-  - Corner Plot (+10%)
-  - Main Road Facing (+10%)
-  - Park Facing (+10%)
-  - Built-in interactive calculator for immediate cost estimation.
-
-### 2. Signature Designer Villas
-- **80 SQ. YDS & 120 SQ. YDS Single-Family Homes**
-- **2-Year Possession:** Move in and receive your keys within 24 months.
-- **5-Year Payment Plan:** 60 convenient monthly installments.
-- Detailed floor plans with dimensions, room layouts, and high-resolution architectural schematics.
-
-### 3. Media & Live Site Progress
-- Integrated with the official YouTube channel ([@IndusEnclaveHousingProject](https://www.youtube.com/@IndusEnclaveHousingProject/videos)).
-- Real-time video player modal, categorical filtering (Site Development, Plot Tours, Master Plan Insights, Event Highlights), and searchable video directory.
-
-### 4. Strategic Location & Connectivity
-- Situated at **M-9 Motorway Exit 8 Nooriabad**.
-- **Drive Times:**
-  - Karachi Toll Plaza: ~45 Mins
-  - DHA City Karachi: ~25 Mins
-  - Hyderabad Bypass: ~50 Mins
-  - Port Qasim: ~55 Mins
-- Surrounded by 200+ operational manufacturing powerhouses and secured 24/7 by Motorway Police patrols.
-
-### 5. 100% Legal & Approved
-- Officially certified by **SBCA** and **SDA**, guaranteeing clear title deeds, verified land registry, and complete investment safety.
+### Key Capabilities & Modules
+- **Interactive Plots Explorer:** Interactive view for plot layouts, dimensions (80 sq. yds & 120 sq. yds), and a real-time surcharge calculator for premium categories (Corner, West-Open, Road-Facing, Park-Facing).
+- **Villa Floor Plans & Visualizer:** Interactive architectural floor plans, specification tabs, room dimension breakdowns, and milestone schedules.
+- **Media & Video Progress Portal:** YouTube-integrated video directory with categorical filtering, real-time search, and custom modal video playback.
+- **Location & Landmarks Guide:** Motorway drive-time metrics, surrounding industrial landmarks, and interactive route mapping.
+- **Inquiry & Lead Capture:** Fully responsive booking and contact forms with field validation.
+- **Buyer FAQ System:** Categorized, expandable accordion questions covering approvals, pricing, amenities, and possession.
 
 ---
 
-## 💻 Tech Stack
+## 🛠 Tech Stack
 
-- **Framework:** [Next.js](https://nextjs.org/) 16 (App Router, Turbopack)
-- **Library:** [React](https://react.dev/) 19
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Animations:** [Framer Motion](https://www.framer.com/motion/)
-- **Icons:** [Lucide React](https://lucide.dev/)
-- **Smooth Scroll:** [Lenis](https://lenis.darkroom.engineering/)
+| Category | Technology | Description |
+| :--- | :--- | :--- |
+| **Framework** | [Next.js](https://nextjs.org/) 16 (Turbopack) | React framework with App Router, server/client components, and static pre-rendering |
+| **UI Library** | [React](https://react.dev/) 19 | Core library for component-based UI rendering |
+| **Language** | [TypeScript](https://www.typescriptlang.org/) (Strict Mode) | Type safety, strict interfaces, and maintainable data contracts |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) | Utility-first CSS styling system with custom configurations |
+| **Animations** | [Framer Motion](https://www.framer.com/motion/) | Declarative animations, layout transitions, spring physics, and scroll triggers |
+| **Icons** | [Lucide React](https://lucide.dev/) | Clean, consistent vector icon set |
+| **Smooth Scrolling** | [Lenis](https://lenis.darkroom.engineering/) | Hardware-accelerated smooth scrolling experience |
+| **Tooling & Bundler** | Turbopack / PostCSS / ESLint | Fast build cycles and automated linting |
 
 ---
 
-## 📁 Project Structure
+## 📂 Folder Structure
 
 ```
 estate-nextjs/
-├── README.md
+├── README.md                      # Developer documentation & project guide
 └── nextjs/
-    ├── app/                      # Next.js App Router pages
-    │   ├── page.tsx              # Home Page
-    │   ├── about/page.tsx        # About Indus Enclave & Al-Ashraf Group
-    │   ├── plots/page.tsx        # Sunflower Block plots, dimensions & calculator
-    │   ├── villas/page.tsx       # Floor plans & 5-year villa plans
-    │   ├── location/page.tsx     # Strategic location & connectivity landmarks
-    │   ├── gallery/page.tsx      # High-res photo gallery
-    │   ├── media/page.tsx        # YouTube video directory & site progress
-    │   ├── inquiry/page.tsx      # Booking & inquiry portal
-    │   ├── contact/page.tsx      # Contact form & official branch details
-    │   └── faq/page.tsx          # Categorized buyer FAQs
-    ├── components/               # Global components (Navbar, Footer, Modals)
-    ├── data/                     # Centralized project data & payment plans
-    │   ├── plots-data.ts         # Plot pricing, dimensions & milestones
-    │   ├── villas-data.ts        # Villa architectural plans & payments
-    │   ├── location-data.ts      # Landmarks, distances & drive times
-    │   ├── media-data.ts         # YouTube channel video directory
-    │   └── faq-data.ts           # Government approvals, amenities & booking FAQs
-    ├── sections/                 # Modular, animated section components
-    ├── public/                   # Static assets, layout diagrams & media
-    └── package.json
+    ├── app/                       # Next.js App Router (Pages & Layouts)
+    │   ├── layout.tsx             # Root layout (fonts, providers, metadata, smooth scroll)
+    │   ├── page.tsx               # Homepage (Hero, Stats, Highlights, Testimonials, CTA)
+    │   ├── about/page.tsx         # About page (Mission, Core Values, Team, Background)
+    │   ├── plots/page.tsx         # Plots page (Sunflower Block, Dimensions, Calculator)
+    │   ├── villas/page.tsx        # Villas page (Floor plans, 3D layouts, Specifications)
+    │   ├── location/page.tsx      # Location page (Exit 8 M-9, Drive times, Landmarks)
+    │   ├── gallery/page.tsx       # Photo gallery with category filters & lightbox
+    │   ├── media/page.tsx         # Media page (YouTube video directory & modal player)
+    │   ├── inquiry/page.tsx       # Dedicated property inquiry and booking form
+    │   ├── contact/page.tsx       # Contact page (Office locations, direct numbers, form)
+    │   ├── faq/page.tsx           # Categorized FAQ search and accordion view
+    │   └── globals.css            # Global CSS, Tailwind utilities, and root variables
+    │
+    ├── components/                # Reusable UI components
+    │   ├── navbar.tsx             # Global sticky navigation with mobile drawer
+    │   ├── footer.tsx             # Global footer with site links, contacts & social links
+    │   ├── scroll-provider.tsx    # Smooth scroll (Lenis) context wrapper
+    │   └── ui/                    # Base UI building blocks (inputs, buttons, badges)
+    │
+    ├── sections/                  # Page-specific modular section components
+    │   ├── hero-sections.tsx      # Homepage primary hero banner
+    │   ├── stats.tsx              # Numerical milestone counter section
+    │   ├── why-choose-us.tsx      # Features & competitive advantages section
+    │   ├── testimonials.tsx       # Client reviews marquee & cards
+    │   ├── call-to-action.tsx     # Final conversion CTA sections
+    │   ├── contact.tsx            # Interactive contact form section
+    │   ├── plots/                 # Plot-specific sections (Calculator, Plans, Dimensions)
+    │   ├── villas/                # Villa-specific sections (Floor plans, Features, FAQs)
+    │   ├── location/              # Location-specific sections (Drive times, Map, Landmarks)
+    │   ├── media/                 # Media sections (Hero, Spotlight, Video Grid, Tour Modal)
+    │   ├── gallery/               # Gallery sections & visual showcases
+    │   └── about/                 # About sections (Hero, Mission, Stats, Values)
+    │
+    ├── data/                      # Structured TypeScript data models & content sources
+    │   ├── data.tsx               # Homepage items, testimonials, and feature highlights
+    │   ├── plots-data.ts          # Plot dimensions, milestone payments, and extra charges
+    │   ├── villas-data.ts         # Villa specifications, room sizes, and payment schedules
+    │   ├── location-data.ts       # Driving durations, motorway exit info, and landmark lists
+    │   ├── media-data.ts          # Video library, YouTube parser helper, and categories
+    │   └── faq-data.ts            # FAQ items, question categories, and highlight tags
+    │
+    ├── public/                    # Static public assets (Images, SVGs, Layout schematics)
+    │   ├── 80_yards_plot.jpg      # Official 80 sq. yds plot dimension layout map
+    │   ├── 120_yards_plot...jpeg  # Official 120 sq. yds plot dimension layout map
+    │   ├── logo-1.webp            # Primary brand mark
+    │   └── assets/                # Architectural renders, icons, and hero photography
+    │
+    ├── next.config.ts             # Next.js configuration (Remote image domains, etc.)
+    ├── tsconfig.json              # TypeScript compiler configuration & path aliases (`@/*`)
+    ├── postcss.config.mjs         # PostCSS plugins configuration
+    ├── eslint.config.mjs          # ESLint code style and quality rules
+    └── package.json               # Project dependencies and npm scripts
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 1. Prerequisites
+- **Node.js:** v18.18.0 or later (Node 20+ recommended)
+- **Package Manager:** `npm` (or `pnpm` / `yarn`)
 
-Ensure you have [Node.js](https://nodejs.org/) (v18.18 or higher recommended) and `npm` installed.
+### 2. Installation
+Navigate into the application folder and install project dependencies:
+```bash
+cd nextjs
+npm install
+```
 
-### Installation
+### 3. Running Development Server
+Start the local development server with Turbopack:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-1. Clone or navigate to the project directory:
-   ```bash
-   cd nextjs
-   ```
-
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-4. Open your browser and visit:
-   ```
-   http://localhost:3000
-   ```
-
-### Building for Production
-
-To create an optimized production build:
+### 4. Production Build
+To create a production-optimized build:
 ```bash
 npm run build
+```
+To test and preview the production build locally:
+```bash
 npm run start
+```
+
+### 5. Code Linting
+Run the linter to verify code formatting and type safety:
+```bash
+npm run lint
 ```
 
 ---
 
-## 📞 Official Contacts & Inquiries
+## ⚙️ Engineering & Architecture Patterns
 
-**Indus Enclave Housing Project**  
-*A Project of Al-Ashraf Group of Companies*
-
-- **Head Office:** No. 1 & 2, Mezzanine Floor, Osif Arcade, Block No. 15, Gulshan-e-Iqbal, Karachi, Pakistan.
-- **Site Office:** M-9 Karachi–Hyderabad Motorway, Exit 8 Nooriabad, Sindh.
-- **UAN:** 111-ASHRAF (274-723)
-- **Phone / WhatsApp:** +92 329 302 3156 / +92 316 822 8918
-- **Email:** info@indusenclave.com | info@alashrafgoc.com
-- **Official Channels:**
-  - [YouTube Channel](https://www.youtube.com/@IndusEnclaveHousingProject/videos)
-  - [Facebook Page](https://www.facebook.com/IndusEnclave)
-  - [Instagram Profile](https://www.instagram.com/indusenclave/)
+- **Path Aliasing:** Imports use the `@/*` alias mapped directly to `nextjs/*` (e.g. `@/components/*`, `@/data/*`, `@/sections/*`).
+- **Data-Driven Architecture:** All dynamic information (pricing, plot dimensions, FAQs, media items, landmark listings) is decoupled from UI presentation and maintained in dedicated type-safe modules under `nextjs/data/`.
+- **Client vs Server Components:** Server-rendered shell layouts combined with selective `"use client"` directives for interactive modules (interactive calculator, modals, Framer Motion animations, tab switchers).
+- **Image Optimization:** Utilizes `next/image` with responsive `sizes`, WebP/AVIF compression, and prioritized loading for hero visual assets.
