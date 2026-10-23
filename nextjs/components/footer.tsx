@@ -137,6 +137,14 @@ export function Footer() {
                                 >
                                     Gallery
                                 </motion.a>
+                                <motion.a href="/media" className="hover:text-white transition-colors duration-200"
+                                    initial={{ y: 50, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    viewport={{ once: true }}
+                                    transition={{ delay: 0.32, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
+                                >
+                                    Media
+                                </motion.a>
                                 <motion.a href="/inquiry" className="hover:text-white transition-colors duration-200"
                                     initial={{ y: 50, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
