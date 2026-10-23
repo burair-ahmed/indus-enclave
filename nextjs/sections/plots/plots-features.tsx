@@ -45,8 +45,7 @@ export function PlotsFeatures() {
                         Why Choose Sunflower Block?
                     </h2>
                     <p className="text-zinc-600 mt-3 text-sm md:text-base leading-relaxed">
-                        Sunflower Block is specifically designated as Indus Enclave&apos;s prime residential haven,
-                        blending modern city infrastructure with peaceful natural serenity.
+                        Sunflower Block is the ideal place to build your home, with wide paved roads, reliable utilities, and a clean, green environment for your family.
                     </p>
                 </div>
 

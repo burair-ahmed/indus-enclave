@@ -32,7 +32,7 @@ export function WhyChooseUs() {
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
                     >
-                        Find the Right Property With Confidence
+                        Why Families Trust Indus Enclave
                     </motion.h2>
 
                     {/* Accordion List */}
@@ -86,7 +86,7 @@ export function WhyChooseUs() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                     >
-                        Our real estate experts provide local insights and personalized support to make your property journey simple.
+                        Our team is here to guide you every step of the way — from your first question to the day you move into your new home.
                     </motion.p>
                     
                     <motion.div className="relative w-121.5 h-102.75 rounded-xl overflow-hidden shadow-sm bg-zinc-100 max-w-full" 

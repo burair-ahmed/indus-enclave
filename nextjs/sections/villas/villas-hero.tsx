@@ -33,9 +33,9 @@ export function VillasHero() {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.2, duration: 0.6 }}
                 >
-                    Architectural Floor Plans <br />
+                    Beautiful Family Homes <br />
                     <span className="bg-gradient-to-r from-white via-zinc-200 to-zinc-400 bg-clip-text text-transparent">
-                        &amp; Designer Luxury Villas
+                        &amp; Smart Floor Plans
                     </span>
                 </motion.h1>
 
@@ -46,10 +46,10 @@ export function VillasHero() {
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
                 >
-                    Explore meticulously designed <span className="text-white font-medium">80 SQ. Yards</span> and{" "}
-                    <span className="text-white font-medium">120 SQ. Yards</span> luxury villas at Indus Enclave.
-                    Featuring thoughtful room proportions, <span className="text-amber-300 font-medium">Possessions Within 2 Years</span>,
-                    and an ultra-relaxed <span className="text-white font-medium">5 Years Easy Installments Plan</span>.
+                    Discover comfortable <span className="text-white font-medium">80 SQ. Yards</span> and{" "}
+                    <span className="text-white font-medium">120 SQ. Yards</span> homes at Indus Enclave.
+                    Spacious room layouts, <span className="text-amber-300 font-medium">Keys in Your Hands Within 2 Years</span>,
+                    and an easy <span className="text-white font-medium">5-Year Monthly Installment Plan</span>.
                 </motion.p>
 
                 {/* Key Metrics / Highlights Bar */}

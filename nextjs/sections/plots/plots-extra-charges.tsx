@@ -62,8 +62,8 @@ export function PlotsExtraCharges() {
                         Extra Category Charges
                     </h2>
                     <p className="text-zinc-600 mt-3 text-sm md:text-base leading-relaxed">
-                        Prime location plots in Sunflower Block offering superior ventilation, frontages, and scenic views
-                        carry standardized premium category surcharges.
+                        Special plots (like corner, west-open, road-facing, or park-facing) have a small 10% extra charge
+                        because of their prime location and added benefits.
                     </p>
                 </div>
 
@@ -191,7 +191,7 @@ export function PlotsExtraCharges() {
                         </div>
 
                         <div>
-                            <span className="text-xs text-zinc-400 block">Selected Surcharges</span>
+                            <span className="text-xs text-zinc-400 block">Extra Percentage</span>
                             <div className="text-xl md:text-2xl font-mono font-bold text-amber-400 mt-1">
                                 +{totalPercentage}%
                             </div>
@@ -205,12 +205,12 @@ export function PlotsExtraCharges() {
                         </div>
 
                         <div>
-                            <span className="text-xs text-zinc-400 block">Extra Charges Sum</span>
+                            <span className="text-xs text-zinc-400 block">Extra Amount</span>
                             <div className="text-xl md:text-2xl font-mono font-bold text-amber-300 mt-1">
                                 Rs. {extraChargesSum.toLocaleString()}
                             </div>
                             <span className="text-[11px] text-zinc-500 block mt-0.5">
-                                Spread across payment milestones
+                                Spread across your payment plan
                             </span>
                         </div>
 

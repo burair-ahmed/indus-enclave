@@ -46,8 +46,7 @@ export function LocationHero() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.35, type: "spring", stiffness: 260, damping: 30 }}
             >
-                Directly accessible via the M-9 Motorway at Exit 8 Nooriabad. Positioned at the crossroads of
-                Sindh&apos;s fastest growing industrial corridor with swift connectivity to Karachi and Port Qasim.
+                Directly on the M-9 Motorway at Exit 8 Nooriabad. An easy, convenient drive from Karachi, Hyderabad, and nearby work and industrial hubs.
             </motion.p>
 
             {/* Drive Times Grid */}

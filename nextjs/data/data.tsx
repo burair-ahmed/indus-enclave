@@ -11,32 +11,32 @@ export interface WhyChooseUsItem {
 export const whyChooseUsData: WhyChooseUsItem[] = [
     {
         icon: <ShieldCheck className="size-5 text-zinc-600" />,
-        title: "Verified Property Listings",
-        description: "Access a curated database of verified, high-quality properties, ensuring transparency and security in every transaction.",
+        title: "All Properties are Government Approved",
+        description: "Every plot and villa at Indus Enclave is fully approved by SBCA & SDA. You get proper paperwork, so your money is safe.",
         image: "/assets/house.png"
     },
     {
         icon: <MapPin className="size-5 text-zinc-600" />,
-        title: "Expert Local Market Insights",
-        description: "Make informed decisions with the help of our experienced agents who provide detailed analysis and neighborhood trends.",
+        title: "We Know This Area Very Well",
+        description: "Our team lives and works near the M-9 Motorway. We can tell you everything about the location, roads, schools, and nearby facilities.",
         image: "/assets/galleryImage1.png"
     },
     {
         icon: <Handshake className="size-5 text-zinc-600" />,
-        title: "Seamless Buying & Selling Process",
-        description: "We guide you through every stage of your real estate transaction, from initial listing or search to final closing.",
+        title: "We Help You from Start to Finish",
+        description: "From your first question to the day you get your keys — we are with you every step of the way. No hidden steps, no confusion.",
         image: "/assets/galleryImage2.png"
     },
     {
         icon: <Landmark className="size-5 text-zinc-600" />,
-        title: "Mortgage & Financing Support",
-        description: "Find competitive financing options and custom mortgage structures through our network of trusted lending partners.",
+        title: "Easy 3-Year Installment Plan",
+        description: "You can pay in small monthly installments over 3 years. No need to pay everything at once — we make it simple and manageable.",
         image: "/assets/galleryImage3.png"
     },
     {
         icon: <Headset className="size-5 text-zinc-600" />,
-        title: "Dedicated Client Service",
-        description: "Our team is available round-the-clock to address your questions and deliver personalized, professional support.",
+        title: "Our Team is Always Available",
+        description: "Call, WhatsApp, or visit us anytime. We are always ready to answer your questions and help you book your plot.",
         image: "/assets/galleryImage4.png"
     }
 ];
@@ -50,42 +50,42 @@ export interface TestimonialItem {
 
 export const testimonialsCol1: TestimonialItem[] = [
     {
-        name: "Michael Anderson",
-        location: "Austin, Texas",
+        name: "Ahmed Raza",
+        location: "Karachi, Pakistan",
         avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=120&h=120&q=80",
-        text: "The entire buying process was seamless. We found our dream home faster than expected."
+        text: "I booked my 80 sq. yards plot and the whole process was very easy. The team explained everything step by step."
     },
     {
-        name: "Sarah Thompson",
-        location: "Miami, Florida",
+        name: "Fatima Noor",
+        location: "Hyderabad, Pakistan",
         avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fit=crop&w=120&h=120&q=80",
-        text: "Professional, responsive, and incredibly knowledgeable. They helped us secure the perfect waterfront property."
+        text: "The location on the M-9 Motorway is great. Good roads, clean area, and the monthly installments are very affordable."
     },
     {
-        name: "Emma Rodriguez",
-        location: "Barcelona, Spain",
+        name: "Imran Sheikh",
+        location: "Dubai, UAE",
         avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?fit=crop&w=120&h=120&q=80",
-        text: "From property tours to closing, everything was handled professionally. I couldn't have asked for experience."
+        text: "I am living abroad and booked my plot on a video call. The team was very helpful and sent me all the documents on time."
     }
 ];
 
 export const testimonialsCol2: TestimonialItem[] = [
     {
-        name: "David Wilson",
-        location: "Chicago, Illinois",
+        name: "Khalid Hussain",
+        location: "Nooriabad, Sindh",
         avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?fit=crop&w=120&h=120&q=80",
-        text: "Their local market expertise made all the difference. We sold our home above asking price within days."
+        text: "I work nearby in the industrial area. This project is perfect for workers who want to live close to their job without a long commute."
     },
     {
-        name: "Daniel Kim",
-        location: "Seoul, South Korea",
+        name: "Sana Malik",
+        location: "Lahore, Pakistan",
         avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?fit=crop&w=120&h=120&q=80",
-        text: "From property tours to closing, everything was handled professionally. I couldn't have asked for experience."
+        text: "The 120 sq. yards villa floor plan is very spacious. Two big bedrooms, a nice kitchen, and a proper lounge for the family."
     },
     {
-        name: "James Parker",
-        location: "Denver, Colorado",
+        name: "Tariq Memon",
+        location: "Karachi, Pakistan",
         avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?fit=crop&w=120&h=120&q=80",
-        text: "As a first-time homebuyer, I felt supported throughout the entire journey. Highly recommended."
+        text: "I am a first-time buyer and was very nervous. But the team was patient, kind, and answered all my questions. Very happy with my decision."
     }
 ];

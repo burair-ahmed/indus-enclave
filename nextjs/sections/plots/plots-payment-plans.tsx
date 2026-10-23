@@ -37,8 +37,7 @@ export function PlotsPaymentPlans() {
                         Transparent Payment Plan
                     </h2>
                     <p className="text-zinc-600 mt-3 text-sm md:text-base leading-relaxed">
-                        Flexible 3-year payment structures designed for both end-users and smart investors.
-                        Transparent milestones with no hidden charges.
+                        Easy 3-year payment plan with small monthly installments, clear milestones, and zero hidden costs.
                     </p>
 
                     {/* Interactive Plot Switcher */}

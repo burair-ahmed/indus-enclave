@@ -1,7 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Video, Globe, PhoneCall, CheckCircle, ShieldCheck, ArrowRight, MessageSquare, Phone } from "lucide-react";
+import { Video, Globe, PhoneCall, CheckCircle, ShieldCheck, MessageSquare } from "lucide-react";
 
 export function MediaRequestTour() {
     return (
@@ -16,37 +15,37 @@ export function MediaRequestTour() {
                     <div className="lg:col-span-7">
                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-4 border border-white/10">
                             <Globe size={14} />
-                            <span>Overseas &amp; Remote Investor Desk</span>
+                            <span>For Overseas &amp; Out-of-City Buyers</span>
                         </div>
 
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight leading-tight">
                             Can&apos;t Visit in Person? <br />
-                            <span className="text-amber-400">Request a Live Video Inspection</span>
+                            <span className="text-amber-400">See Your Plot on a Live Video Call</span>
                         </h2>
 
                         <p className="text-zinc-300 text-sm sm:text-base mt-4 leading-relaxed font-light max-w-xl">
-                            For overseas Pakistani buyers and out-of-city investors, our site engineers
-                            conduct scheduled 1-on-1 WhatsApp video walkthroughs and dedicated drone passes
-                            showing your specific plot number, road access, and surrounding development.
+                            If you live abroad or cannot visit Nooriabad right now, our site team will video call
+                            you directly on WhatsApp from the exact project site. We will walk over to your plot,
+                            show you the road, and answer your questions live on camera.
                         </p>
 
                         {/* Feature bullets */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mt-8">
                             <div className="flex items-center gap-2.5 text-xs sm:text-sm text-zinc-300">
                                 <CheckCircle size={16} className="text-amber-400 shrink-0" />
-                                <span>Live 1-on-1 WhatsApp Video Calls</span>
+                                <span>Free 1-on-1 WhatsApp video call from site</span>
                             </div>
                             <div className="flex items-center gap-2.5 text-xs sm:text-sm text-zinc-300">
                                 <CheckCircle size={16} className="text-amber-400 shrink-0" />
-                                <span>Specific Plot Pinpoint Inspection</span>
+                                <span>See your exact plot on live camera</span>
                             </div>
                             <div className="flex items-center gap-2.5 text-xs sm:text-sm text-zinc-300">
                                 <CheckCircle size={16} className="text-amber-400 shrink-0" />
-                                <span>SDA &amp; SBCA File Verification</span>
+                                <span>Verify SBCA &amp; SDA legal papers</span>
                             </div>
                             <div className="flex items-center gap-2.5 text-xs sm:text-sm text-zinc-300">
                                 <CheckCircle size={16} className="text-amber-400 shrink-0" />
-                                <span>Direct Engineer Q&amp;A on Site</span>
+                                <span>Ask any question to our on-site team</span>
                             </div>
                         </div>
 
@@ -57,11 +56,11 @@ export function MediaRequestTour() {
                                 className="bg-amber-500 hover:bg-amber-400 text-zinc-950 font-bold px-7 py-3.5 rounded-xl text-sm transition-all duration-200 shadow-lg shadow-amber-500/10 flex items-center gap-2"
                             >
                                 <Video size={16} />
-                                <span>Schedule Video Walkthrough</span>
+                                <span>Book a Live Video Call</span>
                             </a>
 
                             <a
-                                href="https://wa.me/923293023156?text=Hello%20Indus%20Enclave,%20I%20would%20like%20to%20request%20a%20video%20tour%20of%20Sunflower%20Block."
+                                href="https://wa.me/923293023156?text=Hello%20Indus%20Enclave,%20I%20would%20like%20to%20request%20a%20live%20video%20tour%20of%20Sunflower%20Block."
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold px-6 py-3.5 rounded-xl text-sm transition-all shadow-md flex items-center gap-2"
@@ -79,9 +78,9 @@ export function MediaRequestTour() {
                                 <PhoneCall size={22} />
                             </div>
 
-                            <h3 className="text-xl font-bold text-white">Al-Ashraf Group Media Desk</h3>
+                            <h3 className="text-xl font-bold text-white">Call or WhatsApp Our Team</h3>
                             <p className="text-xs text-zinc-400 mt-1">
-                                Direct assistance for media releases, official footage requests, and high-res video downloads.
+                                We are here every day to assist you with plots, pricing, and video tours.
                             </p>
 
                             <div className="mt-6 space-y-3.5 text-xs sm:text-sm">
@@ -90,18 +89,18 @@ export function MediaRequestTour() {
                                     <span className="text-white font-semibold text-base">111-ASHRAF (274-723)</span>
                                 </div>
                                 <div className="p-3.5 rounded-xl bg-zinc-900 border border-zinc-800/80">
-                                    <span className="text-zinc-500 block text-[11px]">Direct Support</span>
+                                    <span className="text-zinc-500 block text-[11px]">Direct Mobile &amp; WhatsApp</span>
                                     <span className="text-white font-semibold">+92 329 302 3156</span>
                                 </div>
                                 <div className="p-3.5 rounded-xl bg-zinc-900 border border-zinc-800/80">
-                                    <span className="text-zinc-500 block text-[11px]">Email</span>
+                                    <span className="text-zinc-500 block text-[11px]">Email Address</span>
                                     <span className="text-white font-semibold">info@alashrafgoc.com</span>
                                 </div>
                             </div>
 
                             <div className="mt-6 pt-4 border-t border-zinc-800 flex items-center gap-2 text-xs text-emerald-400">
                                 <ShieldCheck size={16} />
-                                <span>Official Registered Project • SBCA &amp; SDA Verified</span>
+                                <span>100% Approved by SBCA &amp; SDA • Safe Investment</span>
                             </div>
                         </div>
                     </div>

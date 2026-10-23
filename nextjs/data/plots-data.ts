@@ -76,7 +76,7 @@ export const extraChargesList: ExtraChargeItem[] = [
         name: "West Open",
         percentage: 10,
         percentageText: "10%",
-        description: "Enjoys cool sea breeze and natural evening cross-ventilation, highly prized in Karachi's coastal climate.",
+        description: "Catches the cool evening breeze, keeping your home naturally airy and comfortable in summer.",
         icon: "Wind"
     },
     {
@@ -84,7 +84,7 @@ export const extraChargesList: ExtraChargeItem[] = [
         name: "Corner Plot",
         percentage: 10,
         percentageText: "10%",
-        description: "Dual-road frontage with enhanced architectural design freedom, extra natural light, and wider parking access.",
+        description: "Opens onto two streets, giving you extra natural light, more parking space, and higher resale value.",
         icon: "SquareDashedBottomCode"
     },
     {
@@ -92,7 +92,7 @@ export const extraChargesList: ExtraChargeItem[] = [
         name: "Road Facing",
         percentage: 10,
         percentageText: "10%",
-        description: "Direct frontage on the main boulevard / wide arterial avenues for premier visibility and swift transit.",
+        description: "Faces directly onto a wide main street for easy driving access and prime visibility.",
         icon: "Navigation"
     },
     {
@@ -100,7 +100,7 @@ export const extraChargesList: ExtraChargeItem[] = [
         name: "Park Facing",
         percentage: 10,
         percentageText: "10%",
-        description: "Direct scenic views of landscaped community parks, green recreational lawns, and quiet pedestrian pathways.",
+        description: "Directly faces lush green family parks and walking tracks right outside your front door.",
         icon: "Trees"
     }
 ];
@@ -112,12 +112,12 @@ export const plotsData: Record<"80-sq-yards" | "120-sq-yards", PlotData> = {
         sizeSqYards: 80,
         sizeSqFt: 720,
         block: "Sunflower Block",
-        tagline: "Compact Residential Excellence & High-ROI Investment",
+        tagline: "Ideal for Small Families & High Profit Investment",
         totalAmount: 800000,
         totalAmountFormatted: "800,000 Only",
         paymentPlanDuration: "3 Years Payment Plan",
         description:
-            "At Indus Enclave, we understand that your home is a reflection of your aspirations, and our pricing reflects this understanding. We offer transparent and competitive rates, coupled with flexible payment plans, ensuring that your dream of owning a luxurious home is attainable without financial stress. Investing in an Indus Enclave property means not just acquiring a house but securing your future, as our properties are designed to appreciate in value. Embark on the journey to your dream home with us, where your vision becomes a reality, and your investment is a step toward a prosperous future.",
+            "Own your own 80 Sq. Yards plot in Sunflower Block for just Rs. 800,000 total. You can start with an easy Rs. 25,000 booking fee, pay comfortable Rs. 10,000 monthly installments for 3 years, and build a beautiful double-storey home with a car porch for your family.",
         dimensions: {
             frontage: "30'-0\"",
             depth: "24'-0\"",
@@ -213,12 +213,12 @@ export const plotsData: Record<"80-sq-yards" | "120-sq-yards", PlotData> = {
         sizeSqYards: 120,
         sizeSqFt: 1080,
         block: "Sunflower Block",
-        tagline: "Spacious Residential Canvas for Luxury Villas & Generational Wealth",
+        tagline: "Spacious Plot for a 4 to 5 Bedroom Family Home",
         totalAmount: 1200000,
         totalAmountFormatted: "1,200,000 Only",
         paymentPlanDuration: "3 Years Payment Plan",
         description:
-            "At Indus Enclave, we’re committed to making your dream home a reality without compromising on quality or comfort. Our pricing is designed to cater to a variety of budgets and preferences, ensuring that the perfect home is within your reach. With transparent, competitive rates and flexible payment plans, we prioritize your financial ease. Investing in an Indus Enclave property means investing in a bright and prosperous future, as our homes are crafted not just for today, but for generations to come. Explore our pricing options today and step into the world of Indus Enclave, where your dream home awaits.",
+            "Our 120 Sq. Yards plot in Sunflower Block is priced at Rs. 1,200,000 total. Booking starts at Rs. 35,000 with convenient monthly payments of Rs. 15,000 for 3 years. This gives you extra room for a spacious family home with a front lawn, multiple bedrooms, car parking, and a rooftop terrace.",
         dimensions: {
             frontage: "20'-0\"",
             depth: "36'-0\"",

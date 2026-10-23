@@ -48,7 +48,7 @@ export function PlotsHero() {
             >
                 Secure your ideal residential plot with premium 80 SQ.YDS &amp; 120 SQ.YDS options.
                 Affordable booking starting from just <span className="text-amber-300 font-semibold">Rs. 25,000</span>,
-                36 easy monthly installments, and high-yield capital appreciation.
+                36 easy monthly installments, and great long-term value for your family.
             </motion.p>
 
             {/* Quick Stats Badges */}
@@ -71,7 +71,7 @@ export function PlotsHero() {
                     <span className="text-lg md:text-xl font-bold text-white mt-0.5 block">From Rs. 10,000</span>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 text-center">
-                    <span className="text-[11px] uppercase tracking-wider text-zinc-400 block font-medium">Payment Tenor</span>
+                    <span className="text-[11px] uppercase tracking-wider text-zinc-400 block font-medium">Payment Period</span>
                     <span className="text-lg md:text-xl font-bold text-white mt-0.5 block">3 Years Plan</span>
                 </div>
             </motion.div>

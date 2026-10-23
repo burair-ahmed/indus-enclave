@@ -56,7 +56,7 @@ export function Testimonials() {
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
                     >
-                        Trusted by Homebuyers. Proven by Results.
+                        What Our Buyers Say
                     </motion.h2>
 
                     <motion.p className="text-zinc-500 text-sm md:text-base mt-2.5 max-w-[340px]"
@@ -65,7 +65,7 @@ export function Testimonials() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                     >
-                        Honest words from clients who trusted us with their space.
+                        Real words from real families who bought plots at Indus Enclave.
                     </motion.p>
                 </div>
 

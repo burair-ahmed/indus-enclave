@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Play, Video, ShieldCheck, Sparkles, Film } from "lucide-react";
+import { Play, Video, ShieldCheck, Film } from "lucide-react";
 import { mediaStats } from "@/data/media-data";
 
 export function MediaHero() {
@@ -25,7 +25,7 @@ export function MediaHero() {
             >
                 <Film size={14} className="text-amber-400" />
                 <span className="font-medium tracking-wide">
-                    Official Video Archive • Site Progress &amp; Drone Surveys
+                    Official Video Center • M-9 Motorway Exit 8 Nooriabad
                 </span>
             </motion.div>
 
@@ -36,7 +36,7 @@ export function MediaHero() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.25, type: "spring", stiffness: 260, damping: 30 }}
             >
-                Indus Enclave <span className="bg-gradient-to-r from-amber-200 via-white to-amber-100 bg-clip-text text-transparent">In Motion</span>
+                See What Indus Enclave Looks Like in <span className="bg-gradient-to-r from-amber-200 via-white to-amber-100 bg-clip-text text-transparent">Real Life</span>
             </motion.h1>
 
             {/* Subtitle */}
@@ -46,8 +46,8 @@ export function MediaHero() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.35, type: "spring", stiffness: 260, damping: 30 }}
             >
-                Watch verified 4K aerial drone flyovers of the M-9 Motorway Exit 8, heavy machinery
-                earthwork in Sunflower Block, and 3D architectural villa walkthroughs.
+                Watch live construction work, heavy bulldozers, Sunflower Block plot tours,
+                and official updates directly from the site on the M-9 Motorway.
             </motion.p>
 
             {/* Stats Bar */}
@@ -84,7 +84,7 @@ export function MediaHero() {
                     className="bg-white hover:bg-zinc-100 text-zinc-900 font-semibold px-7 py-3 rounded-xl text-sm transition-all duration-200 shadow-md flex items-center gap-2"
                 >
                     <Play size={16} className="fill-zinc-900" />
-                    <span>Watch Featured Survey</span>
+                    <span>Watch Featured Video</span>
                 </a>
 
                 <a
@@ -92,7 +92,7 @@ export function MediaHero() {
                     className="bg-white/15 hover:bg-white/25 text-white border border-white/20 backdrop-blur-md px-6 py-3 rounded-xl text-sm font-semibold transition-all duration-200 flex items-center gap-2"
                 >
                     <Video size={16} className="text-amber-400" />
-                    <span>Browse All 10+ Videos</span>
+                    <span>Browse All 12 Videos</span>
                 </a>
             </motion.div>
 
@@ -104,7 +104,7 @@ export function MediaHero() {
                 transition={{ delay: 0.65 }}
             >
                 <ShieldCheck size={14} className="text-emerald-400" />
-                <span>SBCA &amp; SDA Verified Project • Al-Ashraf Group Of Companies</span>
+                <span>100% Government Approved (SBCA &amp; SDA) • A Project of Al-Ashraf Group</span>
             </motion.div>
         </motion.section>
     );

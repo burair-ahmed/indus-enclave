@@ -31,7 +31,7 @@ export function Contact() {
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
                     >
-                        Connect with us <br />to get the best deal
+                        Talk to Us – We'll Help You Book Your Plot
                     </motion.h2>
 
                     {/* Form */}
@@ -83,7 +83,7 @@ export function Contact() {
                                     viewport={{ once: true }}
                                     transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                                 >
-                                    PHONE NUMBER
+                                    PHONE NUMBER (WhatsApp Preferred)
                                 </motion.label>
                                 <motion.input type="tel" placeholder="+92 329 302 3156" className="w-full border border-zinc-200 rounded-sm px-4 py-2.5 text-xs text-zinc-800 placeholder-zinc-400 focus:outline-none focus:border-zinc-300 transition-colors" 
                                     initial={{ y: 50, opacity: 0 }}
@@ -101,9 +101,9 @@ export function Contact() {
                                     viewport={{ once: true }}
                                     transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                                 >
-                                    SUBJECT
+                                    WHAT CAN WE HELP YOU WITH?
                                 </motion.label>
-                                <motion.input type="text" placeholder="E.g. Buying Property" className="w-full border border-zinc-200 rounded-sm px-4 py-2.5 text-xs text-zinc-800 placeholder-zinc-400 focus:outline-none focus:border-zinc-300 transition-colors" 
+                                <motion.input type="text" placeholder="E.g. I want to buy a plot" className="w-full border border-zinc-200 rounded-sm px-4 py-2.5 text-xs text-zinc-800 placeholder-zinc-400 focus:outline-none focus:border-zinc-300 transition-colors" 
                                     initial={{ y: 50, opacity: 0 }}
                                     whileInView={{ y: 0, opacity: 1 }}
                                     viewport={{ once: true }}
@@ -120,7 +120,7 @@ export function Contact() {
                                 viewport={{ once: true }}
                                 transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                             >
-                                MESSAGE
+                                YOUR MESSAGE
                             </motion.label>
                             <motion.textarea rows={4} placeholder="E.g. I want to buy a property" className="w-full border border-zinc-200 rounded-sm px-4 py-2.5 text-xs text-zinc-800 placeholder-zinc-400 focus:outline-none focus:border-zinc-300 transition-colors resize-none" 
                                 initial={{ y: 50, opacity: 0 }}
@@ -138,7 +138,7 @@ export function Contact() {
                             transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                         >
                             <button type="submit" className="bg-black hover:bg-zinc-900 text-white text-xs px-6 py-3.5 rounded-full transition-colors duration-200 cursor-pointer">
-                                GET STARTED
+                                SEND MESSAGE
                             </button>
                         </motion.div>
                     </form>
@@ -157,7 +157,7 @@ export function Contact() {
                         {/* Details Content Overlay */}
                         <div className="absolute bottom-10 left-10 flex flex-col gap-2.5 z-10">
                             <span className="text-base text-white">
-                                KEY DETAILS
+                                CONTACT DETAILS
                             </span>
                             <motion.div className="flex flex-col gap-1 text-sm text-white"
                                 initial={{ y: 20, opacity: 0 }}

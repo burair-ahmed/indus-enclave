@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { Play, Maximize2, MapPin, Calendar, Clock, Sparkles, CheckCircle2 } from "lucide-react";
 import { siteVideos, VideoItem, getYoutubeThumbnail, getYoutubeEmbedUrl } from "@/data/media-data";
@@ -33,20 +32,20 @@ export function MediaSpotlight({ onOpenModal }: MediaSpotlightProps) {
     return (
         <section id="spotlight-video" className="py-20 md:py-24 px-4 md:px-8 lg:px-16 w-full bg-zinc-50 border-b border-zinc-200">
             <div className="max-w-7xl mx-auto">
-                {/* Section Header matching site standard */}
+                {/* Section Header */}
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
                     <div>
                         <div className="flex items-center gap-1.5">
                             <span className="size-1.5 bg-zinc-900 inline-block" />
                             <span className="text-sm text-zinc-900 tracking-wide uppercase font-medium">
-                                FEATURED VIDEO SPOTLIGHT
+                                FEATURED VIDEOS
                             </span>
                         </div>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-zinc-900 tracking-tight leading-tight mt-3">
-                            Cinematic Flyovers &amp; Walkthroughs
+                            Featured Videos from the Project
                         </h2>
                         <p className="text-zinc-500 text-sm md:text-base mt-2 max-w-xl">
-                            Select between verified 4K aerial footage and complete architectural interior tours.
+                            Watch our Sunflower Block launch tour or listen to the CEO explain our affordable installment plans.
                         </p>
                     </div>
 
@@ -54,6 +53,10 @@ export function MediaSpotlight({ onOpenModal }: MediaSpotlightProps) {
                     <div className="flex flex-wrap items-center gap-2">
                         {featuredVideos.map((video) => {
                             const isSelected = selectedVideo.id === video.id;
+                            const label =
+                                video.category === "Plot & House Tours"
+                                    ? "Sunflower Block Launch"
+                                    : "CEO Interview";
                             return (
                                 <button
                                     key={video.id}
@@ -64,7 +67,7 @@ export function MediaSpotlight({ onOpenModal }: MediaSpotlightProps) {
                                             : "bg-white text-zinc-600 border border-zinc-200 hover:border-zinc-400 hover:text-zinc-900"
                                     }`}
                                 >
-                                    {video.category === "Site Progress & Drone" ? "Aerial Drone Survey" : "Villa 3D Tour"}
+                                    {label}
                                 </button>
                             );
                         })}
@@ -133,7 +136,7 @@ export function MediaSpotlight({ onOpenModal }: MediaSpotlightProps) {
                                         className="inline-flex items-center gap-1.5 text-zinc-200 hover:text-white bg-black/60 px-3 py-1.5 rounded-md hover:bg-black/80 transition-colors cursor-pointer border border-white/10"
                                     >
                                         <Maximize2 size={13} />
-                                        <span>Fullscreen Lightbox</span>
+                                        <span>Open Fullscreen</span>
                                     </button>
                                 </div>
                             </div>
@@ -163,7 +166,7 @@ export function MediaSpotlight({ onOpenModal }: MediaSpotlightProps) {
                                 </div>
                                 <div className="flex items-center gap-2 text-zinc-700">
                                     <Clock size={14} className="text-zinc-500" />
-                                    <span>{selectedVideo.duration} Duration</span>
+                                    <span>{selectedVideo.duration} Long</span>
                                 </div>
                                 <div className="flex items-center gap-2 text-zinc-700 col-span-2">
                                     <MapPin size={14} className="text-zinc-500" />
@@ -174,7 +177,7 @@ export function MediaSpotlight({ onOpenModal }: MediaSpotlightProps) {
                             {/* Key Highlights list */}
                             <div>
                                 <span className="text-xs uppercase tracking-wider text-zinc-500 font-semibold mb-2 block">
-                                    Key Site Milestones Shown:
+                                    What You Will See in This Video:
                                 </span>
                                 <ul className="space-y-2">
                                     {selectedVideo.keyHighlights.slice(0, 3).map((item, idx) => (
@@ -194,13 +197,13 @@ export function MediaSpotlight({ onOpenModal }: MediaSpotlightProps) {
                                 className="w-full inline-flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 text-white font-medium py-3 px-5 rounded-xl text-sm transition-all duration-200 cursor-pointer shadow-sm"
                             >
                                 <Play size={16} className="fill-white" />
-                                Open Cinema Lightbox
+                                Watch in Big Screen
                             </button>
                             <a
                                 href="/inquiry"
                                 className="w-full inline-flex items-center justify-center gap-2 bg-white hover:bg-zinc-50 text-zinc-900 font-medium py-3 px-5 rounded-xl text-sm transition-colors border border-zinc-200 text-center shadow-xs"
                             >
-                                Inquire About This Location
+                                Ask About This Location
                             </a>
                         </div>
                     </div>

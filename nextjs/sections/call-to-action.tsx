@@ -24,7 +24,7 @@ export function CallToAction() {
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
         >
-          Find the Perfect Property for Your Lifestyle
+          Book Your Plot Today — Pay in Small Monthly Installments
         </motion.h2>
 
         <motion.p className="text-zinc-500 text-sm max-w-[400px] mb-7"
@@ -33,7 +33,7 @@ export function CallToAction() {
           viewport={{ once: true }}
           transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
         >
-          Explore premium homes, modern apartments and investment opportunities in the most desirable locations.
+          80 and 120 sq. yard plots in Sunflower Block. Low down payment, 3-year easy installments. Government approved by SBCA & SDA.
         </motion.p>
 
         <motion.button className="bg-black hover:bg-zinc-900 text-white text-sm px-5 py-3.5 rounded-lg transition-all duration-200 flex items-center gap-2 group cursor-pointer"
@@ -42,7 +42,7 @@ export function CallToAction() {
           viewport={{ once: true }}
           transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
         >
-          <span>Browse Properties</span>
+          <span>See Plots & Prices</span>
           <MoveRight size={16} className="transition-transform duration-200 group-hover:translate-x-1" />
         </motion.button>
       </div>

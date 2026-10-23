@@ -32,52 +32,52 @@ export const locationMeta = {
 export const aboutLocationContent = {
     title: "About The Location",
     paragraph1:
-        "Nooriabad has regained its potential to grow immensely as an attractive industrial estate. Interest of government has revitalized the zone with policies that benefit investors and industrialists. Direct link to motorway provides means for people to find work here from Karachi and other parts of Sindh.",
+        "Nooriabad is growing rapidly as a major business and industrial center. With strong government support and a direct connection to the M-9 Motorway, people from Karachi and Hyderabad find it convenient and rewarding to live, work, and invest here.",
     paragraph2:
-        "For the aspect of residence, Indus Enclave is a lucrative and very reasonable project for locals who work in the Nooriabad Industrial Area, eliminating painful daily commutes while providing upscale gated amenities.",
+        "For families and professionals working in Nooriabad or along the motorway, Indus Enclave is an affordable and comfortable gated community that saves hours of travel time every day while offering modern amenities.",
     paragraph3:
-        "Added security on motorway with highway police keeps the road secured with possibility of faster authority response in case of emergencies or accidents. Around more than 200 production facilities are operational with more industrial developments still in progress. Access to Port Qasim and Karachi Port also provides timely transportation of goods via sea route."
+        "24/7 Motorway Police make daily travel safe and secure. With more than 200 active factories nearby and easy routes to Port Qasim and Karachi, Indus Enclave offers both a peaceful lifestyle and strong future property value."
 };
 
 export const locationAtAGlance = [
     {
-        title: "Strategic Motorway Location",
-        description: "Direct frontage on the prime M-9 Karachi–Hyderabad Motorway at Nooriabad Exit 8 with dedicated interchange access.",
+        title: "Prime Motorway Location",
+        description: "Located right on the M-9 Karachi–Hyderabad Motorway at Exit 8 Nooriabad for fast, convenient access.",
         icon: "Compass"
     },
     {
-        title: "Ideal for Industrial Setup",
-        description: "Adjoining one of Sindh's premier manufacturing economic zones with high commercial appreciation.",
+        title: "Close to Job Centers",
+        description: "Surrounded by thriving industrial zones, creating strong rental demand and great investment returns.",
         icon: "Factory"
     },
     {
         title: "Complete Infrastructure",
-        description: "Availability of wide carpeted avenues, water supply, electricity, and high-speed transit links.",
+        description: "Wide paved roads, reliable water, electricity, and carefully planned neighborhood layouts.",
         icon: "Building2"
     },
     {
-        title: "Tax Relief by Government",
-        description: "Government-backed fiscal incentives, special zone policies, and tax benefits for businesses and industrialists.",
+        title: "Government-Backed Growth",
+        description: "Special economic incentives and industrial policies that drive steady development in the region.",
         icon: "BadgePercent"
     },
     {
-        title: "Highway Patrol 24/7 Security",
-        description: "Dedicated Motorway Police patrolling keeps transit safe with rapid response units in case of emergency.",
+        title: "24/7 Highway Patrol Security",
+        description: "Active Motorway Police patrols ensure safe, worry-free journeys for you and your family.",
         icon: "ShieldCheck"
     },
     {
-        title: "Access to Sea Ports",
-        description: "Streamlined logistics access directly to Port Muhammad Bin Qasim and Karachi Port via arterial corridors.",
+        title: "Direct Port Access",
+        description: "Easy highway connections to Port Qasim and Karachi Port for trade and transport.",
         icon: "Ship"
     },
     {
         title: "Public Transportation",
-        description: "Regular inter-city coaches, bus transits, and commuter vans operating continuously between Karachi and Nooriabad.",
+        description: "Regular buses, coaches, and local vans connect Nooriabad with Karachi and nearby towns throughout the day.",
         icon: "Bus"
     },
     {
-        title: "Direct M-9 Connectivity",
-        description: "Signal-free dual carriageway ensuring smooth travel to Karachi center and interior Sindh cities.",
+        title: "Direct M-9 Highway",
+        description: "Wide, signal-free expressway for a smooth, fast drive to Karachi and Hyderabad.",
         icon: "Navigation"
     }
 ];

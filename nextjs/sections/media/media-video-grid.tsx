@@ -91,15 +91,14 @@ export function MediaVideoGrid({ activeModalVideo, setActiveModalVideo }: MediaV
                         <div className="flex items-center gap-1.5">
                             <span className="size-1.5 bg-zinc-900 inline-block" />
                             <span className="text-sm text-zinc-900 tracking-wide uppercase font-medium">
-                                ALL VIDEO RELEASES
+                                ALL VIDEOS &amp; UPDATES
                             </span>
                         </div>
                         <h2 className="text-3xl md:text-[40px]/12 text-zinc-900 mt-4 font-medium leading-tight">
-                            Browse All Video Material
+                            Watch All Videos &amp; Site Progress
                         </h2>
                         <p className="text-zinc-500 text-sm md:text-base mt-2 max-w-xl">
-                            Filter by category or search through verified drone footage, plot layouts,
-                            and project briefings.
+                            Choose a category below or search to watch plot tours, bulldozer work, and official announcements.
                         </p>
                     </div>
 
@@ -108,7 +107,7 @@ export function MediaVideoGrid({ activeModalVideo, setActiveModalVideo }: MediaV
                         <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400 size-4 pointer-events-none" />
                         <input
                             type="text"
-                            placeholder="Search video titles, plots, drone..."
+                            placeholder="Search videos (e.g. Sunflower Block, plots)..."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
                             className="w-full bg-zinc-50 border border-zinc-200 rounded-full pl-11 pr-9 py-3 text-xs sm:text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:border-zinc-900 focus:bg-white shadow-sm transition"
@@ -166,20 +165,20 @@ export function MediaVideoGrid({ activeModalVideo, setActiveModalVideo }: MediaV
 
                 {/* Empty State */}
                 {filteredVideos.length === 0 && (
-                    <div className="py-20 text-center bg-zinc-50 rounded-2xl border border-zinc-200">
+                    <div className="py-16 text-center bg-zinc-50 rounded-2xl border border-zinc-200">
                         <SlidersHorizontal className="size-10 text-zinc-400 mx-auto mb-3" />
-                        <h3 className="text-lg font-semibold text-zinc-900">No videos matched your criteria</h3>
+                        <h3 className="text-lg font-semibold text-zinc-900">No videos found for this search</h3>
                         <p className="text-zinc-500 text-sm mt-1 max-w-sm mx-auto">
-                            Try adjusting your search terms or select &quot;All&quot; from the category filter.
+                            Try typing a different word or select &quot;All&quot; from the categories above.
                         </p>
                         <button
                             onClick={() => {
                                 setSelectedCategory("All");
                                 setSearchQuery("");
                             }}
-                            className="mt-4 px-4 py-2 bg-zinc-900 hover:bg-zinc-800 text-white rounded-lg text-xs font-medium cursor-pointer"
+                            className="mt-4 px-5 py-2.5 bg-zinc-900 hover:bg-zinc-800 text-white rounded-xl text-xs font-semibold cursor-pointer"
                         >
-                            View All Videos
+                            Show All Videos
                         </button>
                     </div>
                 )}
@@ -405,7 +404,7 @@ export function MediaVideoGrid({ activeModalVideo, setActiveModalVideo }: MediaV
                                 {/* Highlights in Modal */}
                                 <div className="mt-6 pt-5 border-t border-zinc-200">
                                     <span className="text-xs font-semibold uppercase tracking-wider text-zinc-500 block mb-3">
-                                        Key Highlights In This Video:
+                                        What you will see in this video:
                                     </span>
                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                                         {activeModalVideo.keyHighlights.map((highlight, idx) => (
@@ -420,14 +419,14 @@ export function MediaVideoGrid({ activeModalVideo, setActiveModalVideo }: MediaV
                                 {/* Call to action row */}
                                 <div className="mt-8 pt-6 border-t border-zinc-200 flex flex-col sm:flex-row items-center justify-between gap-4">
                                     <div className="text-xs text-zinc-500">
-                                        Interested in this plot or sector? Connect with our dedicated sales desk.
+                                        Want to know more about this plot or visit the site? Talk to our team anytime.
                                     </div>
                                     <div className="flex items-center gap-3 w-full sm:w-auto">
                                         <a
                                             href="/inquiry"
                                             className="w-full sm:w-auto text-center px-6 py-2.5 rounded-xl bg-zinc-900 hover:bg-zinc-800 text-white text-xs sm:text-sm font-semibold transition-all shadow-sm"
                                         >
-                                            Inquire For This Plot
+                                            Ask About This Plot
                                         </a>
                                         <button
                                             onClick={() => setActiveModalVideo(null)}
