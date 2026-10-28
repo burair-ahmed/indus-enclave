@@ -12,7 +12,7 @@ export function PlotsHero() {
             transition={{ duration: 0.6 }}
         >
             {/* Dark & Gradient Overlays for high contrast */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/90 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/65 to-black/90 pointer-events-none" />
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent pointer-events-none" />
 
             {/* Top Badge */}
@@ -23,7 +23,9 @@ export function PlotsHero() {
                 transition={{ delay: 0.15, type: "spring", stiffness: 300, damping: 25 }}
             >
                 <Sparkles size={14} className="text-amber-400" />
-                <span className="font-medium tracking-wide">Sunflower Block • 3 Years Flexible Payment Plan</span>
+                <span className="font-medium tracking-wide">
+                    Residential • Commercial • Cottage Industry Plots
+                </span>
             </motion.div>
 
             {/* Main Headline */}
@@ -33,9 +35,9 @@ export function PlotsHero() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.25, type: "spring", stiffness: 260, damping: 30 }}
             >
-                Sunflower Block <br className="hidden sm:inline" />
+                Indus Enclave <br className="hidden sm:inline" />
                 <span className="bg-gradient-to-r from-amber-200 via-white to-amber-100 bg-clip-text text-transparent">
-                    Residential Plots
+                    Plots &amp; Payment Plans
                 </span>
             </motion.h1>
 
@@ -46,9 +48,9 @@ export function PlotsHero() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.35, type: "spring", stiffness: 260, damping: 30 }}
             >
-                Secure your ideal residential plot with premium 80 SQ.YDS &amp; 120 SQ.YDS options.
-                Affordable booking starting from just <span className="text-amber-300 font-semibold">Rs. 25,000</span>,
-                36 easy monthly installments, and great long-term value for your family.
+                Secure your ideal plot with flexible 5-Year (60 Months) installment plans.
+                Affordable monthly installments starting from just <span className="text-amber-300 font-semibold">Rs. 5,000/mo</span>,
+                transparent milestones, and prime locations across Sunflower Block, Commercial Boulevards, and Cottage Industry sectors.
             </motion.p>
 
             {/* Quick Stats Badges */}
@@ -59,20 +61,20 @@ export function PlotsHero() {
                 transition={{ delay: 0.45, type: "spring", stiffness: 260, damping: 30 }}
             >
                 <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 text-center">
-                    <span className="text-[11px] uppercase tracking-wider text-zinc-400 block font-medium">Plot Sizes</span>
-                    <span className="text-lg md:text-xl font-bold text-white mt-0.5 block">80 &amp; 120 SQ.YDS</span>
+                    <span className="text-[11px] uppercase tracking-wider text-zinc-400 block font-medium">Categories</span>
+                    <span className="text-base sm:text-lg md:text-xl font-bold text-white mt-0.5 block">Res, Comm &amp; Cottage</span>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 text-center">
                     <span className="text-[11px] uppercase tracking-wider text-zinc-400 block font-medium">Booking From</span>
-                    <span className="text-lg md:text-xl font-bold text-amber-300 mt-0.5 block">Rs. 25,000</span>
+                    <span className="text-base sm:text-lg md:text-xl font-bold text-amber-300 mt-0.5 block">Rs. 60,000</span>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 text-center">
                     <span className="text-[11px] uppercase tracking-wider text-zinc-400 block font-medium">Monthly Installment</span>
-                    <span className="text-lg md:text-xl font-bold text-white mt-0.5 block">From Rs. 10,000</span>
+                    <span className="text-base sm:text-lg md:text-xl font-bold text-white mt-0.5 block">From Rs. 5,000</span>
                 </div>
                 <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-2xl p-3.5 text-center">
-                    <span className="text-[11px] uppercase tracking-wider text-zinc-400 block font-medium">Payment Period</span>
-                    <span className="text-lg md:text-xl font-bold text-white mt-0.5 block">3 Years Plan</span>
+                    <span className="text-[11px] uppercase tracking-wider text-zinc-400 block font-medium">Payment Tenor</span>
+                    <span className="text-base sm:text-lg md:text-xl font-bold text-white mt-0.5 block">5 Years (60 Mo.)</span>
                 </div>
             </motion.div>
 

@@ -7,23 +7,25 @@ import { PlotsFeatures } from "@/sections/plots/plots-features";
 import { PlotsCta } from "@/sections/plots/plots-cta";
 
 export const metadata: Metadata = {
-    title: "Sunflower Block Plots & 3-Year Payment Plans - Indus Enclave",
+    title: "Plots & 5-Year Payment Plans — Residential, Commercial & Cottage Industry | Indus Enclave",
     description:
-        "Explore 80 SQ.YDS and 120 SQ.YDS residential plots in Sunflower Block at Indus Enclave. Convenient 3-year installment plans with monthly installments from Rs. 10,000 and booking from Rs. 25,000.",
+        "Official 5-Year (60 Months) payment schedules for Residential Plots (80 & 120 Sq. Yds.), Commercial Plots (100 & 200 Sq. Yds.), and Cottage Industry Plots (200 & 400 Sq. Yds.) at Indus Enclave. Easy installments from Rs. 5,000/mo.",
     keywords: [
         "Indus Enclave Plots",
         "Sunflower Block Plots",
         "80 Sq Yards Plot",
         "120 Sq Yards Plot",
-        "3 Years Payment Plan",
+        "Commercial Plots Karachi",
+        "Cottage Industry Plots",
+        "5 Years Payment Plan",
         "Karachi Residential Plots",
         "Indus Enclave Payment Plan",
         "Plots in Karachi"
     ],
     openGraph: {
-        title: "Sunflower Block Plots - Indus Enclave",
+        title: "Plots & Payment Plans - Indus Enclave",
         description:
-            "Prime 80 & 120 SQ.YDS residential plots in Sunflower Block with transparent 3-year payment plans starting from Rs. 25,000 booking.",
+            "Prime Residential (80 & 120 Sq. Yds.), Commercial (100 & 200 Sq. Yds.), and Cottage Industry plots with flexible 5-Year installment plans starting from Rs. 5,000/month.",
         images: ["/hero-bg.webp"]
     }
 };

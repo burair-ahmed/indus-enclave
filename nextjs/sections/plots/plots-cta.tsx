@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 export function PlotsCta() {
-    const [plotChoice, setPlotChoice] = useState<"80 SQ.YDS Plot" | "120 SQ.YDS Plot">("80 SQ.YDS Plot");
+    const [plotChoice, setPlotChoice] = useState<string>("80 SQ.YDS Residential Plot");
     const [name, setName] = useState("");
     const [phone, setPhone] = useState("");
     const [message, setMessage] = useState("");
@@ -27,8 +27,17 @@ export function PlotsCta() {
     };
 
     const whatsappMessage = encodeURIComponent(
-        `Hello Indus Enclave! I am interested in booking a ${plotChoice} in Sunflower Block with the 3-Year Payment Plan. Please share allotment details and schedule a site visit.`
+        `Hello Indus Enclave! I am interested in booking a ${plotChoice} with the 5-Year Payment Plan. Please share allotment details and schedule a site visit.`
     );
+
+    const plotOptions = [
+        { label: "80 SQ.YDS Residential", price: "From Rs. 770,000", value: "80 SQ.YDS Residential Plot" },
+        { label: "120 SQ.YDS Residential", price: "From Rs. 1,100,000", value: "120 SQ.YDS Residential Plot" },
+        { label: "100 SQ.YDS Commercial", price: "Rs. 2,750,000", value: "100 SQ.YDS Commercial Plot" },
+        { label: "200 SQ.YDS Commercial", price: "Rs. 5,500,000", value: "200 SQ.YDS Commercial Plot" },
+        { label: "200 SQ.YDS Cottage Industry", price: "Rs. 2,200,000", value: "200 SQ.YDS Cottage Industry Plot" },
+        { label: "400 SQ.YDS Cottage Industry", price: "Rs. 4,480,000", value: "400 SQ.YDS Cottage Industry Plot" }
+    ];
 
     return (
         <section id="inquire" className="py-20 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto w-full">
@@ -46,13 +55,13 @@ export function PlotsCta() {
                         </div>
 
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium tracking-tight leading-tight">
-                            Reserve Your Plot in <br />
-                            <span className="text-amber-400">Sunflower Block Today</span>
+                            Reserve Your Plot at <br />
+                            <span className="text-amber-400">Indus Enclave Today</span>
                         </h2>
 
                         <p className="text-zinc-300 text-sm md:text-base leading-relaxed">
-                            Embark on the journey to your dream home with Indus Enclave. Secure your 80 SQ.YDS or 120 SQ.YDS plot
-                            with flexible 3-year installments, transparent milestones, and immediate plot allocation.
+                            Embark on the journey to secure property ownership with Indus Enclave. Choose from Residential, Commercial,
+                            or Cottage Industry plots with flexible 5-Year (60 Months) installments, transparent milestones, and verified documentation.
                         </p>
 
                         <div className="flex flex-col gap-3.5 pt-2 text-xs md:text-sm text-zinc-300">
@@ -130,44 +139,31 @@ export function PlotsCta() {
                                 <div>
                                     <h3 className="text-xl font-bold text-white">Schedule a Site Visit</h3>
                                     <p className="text-xs text-zinc-400 mt-1">
-                                        Fill out your details to receive the official plot allotment brochure.
+                                        Fill out your details to receive official brochures and reserve your plot.
                                     </p>
                                 </div>
 
                                 {/* Plot Choice Segment */}
                                 <div className="pt-2">
                                     <label className="text-xs font-medium text-zinc-400 block mb-2">
-                                        Select Plot Size
+                                        Select Plot Category &amp; Size
                                     </label>
                                     <div className="grid grid-cols-2 gap-2">
-                                        <button
-                                            type="button"
-                                            onClick={() => setPlotChoice("80 SQ.YDS Plot")}
-                                            className={`p-3 rounded-xl text-xs font-bold transition-all text-center border cursor-pointer ${
-                                                plotChoice === "80 SQ.YDS Plot"
-                                                    ? "bg-amber-500 text-zinc-950 border-amber-500 shadow-md"
-                                                    : "bg-zinc-900 text-zinc-300 border-zinc-800 hover:border-zinc-700"
-                                            }`}
-                                        >
-                                            80 SQ.YDS Plot
-                                            <span className="block text-[10px] font-normal opacity-80 mt-0.5">
-                                                Rs. 800,000 Only
-                                            </span>
-                                        </button>
-                                        <button
-                                            type="button"
-                                            onClick={() => setPlotChoice("120 SQ.YDS Plot")}
-                                            className={`p-3 rounded-xl text-xs font-bold transition-all text-center border cursor-pointer ${
-                                                plotChoice === "120 SQ.YDS Plot"
-                                                    ? "bg-amber-500 text-zinc-950 border-amber-500 shadow-md"
-                                                    : "bg-zinc-900 text-zinc-300 border-zinc-800 hover:border-zinc-700"
-                                            }`}
-                                        >
-                                            120 SQ.YDS Plot
-                                            <span className="block text-[10px] font-normal opacity-80 mt-0.5">
-                                                Rs. 1,200,000 Only
-                                            </span>
-                                        </button>
+                                        {plotOptions.map((opt) => (
+                                            <button
+                                                key={opt.value}
+                                                type="button"
+                                                onClick={() => setPlotChoice(opt.value)}
+                                                className={`p-2.5 rounded-xl text-left border cursor-pointer transition-all ${
+                                                    plotChoice === opt.value
+                                                        ? "bg-amber-500 text-zinc-950 border-amber-500 shadow-md"
+                                                        : "bg-zinc-900 text-zinc-300 border-zinc-800 hover:border-zinc-700"
+                                                }`}
+                                            >
+                                                <div className="text-xs font-bold truncate">{opt.label}</div>
+                                                <div className="text-[10px] opacity-80 mt-0.5">{opt.price}</div>
+                                            </button>
+                                        ))}
                                     </div>
                                 </div>
 
@@ -207,7 +203,7 @@ export function PlotsCta() {
                                         rows={2}
                                         value={message}
                                         onChange={(e) => setMessage(e.target.value)}
-                                        placeholder="I would like to schedule a visit to Sunflower Block this weekend..."
+                                        placeholder="I would like to schedule a visit to inspect available plots..."
                                         className="w-full bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-2.5 text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-amber-400 transition resize-none"
                                     />
                                 </div>

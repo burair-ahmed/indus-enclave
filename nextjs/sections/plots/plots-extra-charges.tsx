@@ -11,15 +11,25 @@ import {
     Check,
     Calculator,
     Info,
-    ArrowRight
+    ArrowRight,
+    SquareDashedBottomCode,
+    Sparkles
 } from "lucide-react";
-import { extraChargesList, ExtraChargeItem, plotsData } from "@/data/plots-data";
+import {
+    extraChargesList,
+    ExtraChargeItem,
+    calculatorPlotOptions,
+    CalculatorPlotOption
+} from "@/data/plots-data";
 
 export function PlotsExtraCharges() {
-    const [calcPlot, setCalcPlot] = useState<"80-sq-yards" | "120-sq-yards">("80-sq-yards");
-    const [selectedCharges, setSelectedCharges] = useState<string[]>(["west-open"]);
+    const [selectedPlotId, setSelectedPlotId] = useState<string>("res-80-standard");
+    const [selectedCharges, setSelectedCharges] = useState<string[]>(["corner"]);
 
-    const baseAmount = plotsData[calcPlot].totalAmount;
+    const currentPlotOption: CalculatorPlotOption =
+        calculatorPlotOptions.find((p) => p.id === selectedPlotId) || calculatorPlotOptions[0];
+
+    const baseAmount = currentPlotOption.price;
 
     // Toggle extra charge
     const toggleCharge = (id: string) => {
@@ -30,20 +40,25 @@ export function PlotsExtraCharges() {
         }
     };
 
-    const totalPercentage = selectedCharges.length * 10;
-    const extraChargesSum = (baseAmount * totalPercentage) / 100;
+    // Calculate sum of percentages based on individually assigned rates
+    const totalPercentage = selectedCharges.reduce((acc, id) => {
+        const item = extraChargesList.find((c) => c.id === id);
+        return acc + (item ? item.percentage : 0);
+    }, 0);
+
+    const extraChargesSum = Math.round((baseAmount * totalPercentage) / 100);
     const finalAmount = baseAmount + extraChargesSum;
 
     const getIcon = (id: string) => {
         switch (id) {
-            case "west-open":
-                return <Wind size={22} className="text-sky-500" />;
             case "corner":
-                return <Maximize size={22} className="text-amber-500" />;
+                return <SquareDashedBottomCode size={22} className="text-amber-500" />;
             case "road-facing":
                 return <Navigation size={22} className="text-indigo-500" />;
             case "park-facing":
                 return <Trees size={22} className="text-emerald-500" />;
+            case "west-open":
+                return <Wind size={22} className="text-sky-500" />;
             default:
                 return <Percent size={22} className="text-zinc-500" />;
         }
@@ -56,18 +71,18 @@ export function PlotsExtraCharges() {
                 <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-14">
                     <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 text-xs font-semibold uppercase tracking-wider mb-3">
                         <Percent size={14} className="text-amber-600" />
-                        <span>Premium Category Plots</span>
+                        <span>Category Specifications</span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-medium text-zinc-900 tracking-tight">
                         Extra Category Charges
                     </h2>
                     <p className="text-zinc-600 mt-3 text-sm md:text-base leading-relaxed">
-                        Special plots (like corner, west-open, road-facing, or park-facing) have a small 10% extra charge
-                        because of their prime location and added benefits.
+                        These charges are listed separately in the brochure and are not included in the base plot prices above.
+                        Plots with prime positioning have a nominal category premium.
                     </p>
                 </div>
 
-                {/* 4 Extra Charges Cards */}
+                {/* 4 Extra Charges Cards with Individual Percentages */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-14">
                     {extraChargesList.map((charge) => {
                         const isSelected = selectedCharges.includes(charge.id);
@@ -87,13 +102,15 @@ export function PlotsExtraCharges() {
                                     <div className="flex items-center justify-between mb-4">
                                         <div
                                             className={`size-12 rounded-2xl flex items-center justify-center ${
-                                                isSelected ? "bg-zinc-800" : "bg-white shadow-sm border border-zinc-200"
+                                                isSelected
+                                                    ? "bg-zinc-800"
+                                                    : "bg-white shadow-sm border border-zinc-200"
                                             }`}
                                         >
                                             {getIcon(charge.id)}
                                         </div>
                                         <span
-                                            className={`text-xs font-mono font-bold px-2.5 py-1 rounded-full ${
+                                            className={`text-xs font-mono font-bold px-3 py-1 rounded-full ${
                                                 isSelected
                                                     ? "bg-amber-400 text-zinc-950 font-bold"
                                                     : "bg-amber-100 text-amber-900 font-bold"
@@ -103,7 +120,11 @@ export function PlotsExtraCharges() {
                                         </span>
                                     </div>
 
-                                    <h3 className={`text-xl font-bold ${isSelected ? "text-white" : "text-zinc-900"}`}>
+                                    <h3
+                                        className={`text-xl font-bold ${
+                                            isSelected ? "text-white" : "text-zinc-900"
+                                        }`}
+                                    >
                                         {charge.name}
                                     </h3>
                                     <p
@@ -125,7 +146,9 @@ export function PlotsExtraCharges() {
                                     <span>{isSelected ? "Selected in Calculator" : "Click to Calculate"}</span>
                                     <div
                                         className={`size-5 rounded-full flex items-center justify-center ${
-                                            isSelected ? "bg-amber-400 text-zinc-950" : "border border-zinc-300"
+                                            isSelected
+                                                ? "bg-amber-400 text-zinc-950"
+                                                : "border border-zinc-300"
                                         }`}
                                     >
                                         {isSelected && <Check size={12} strokeWidth={3} />}
@@ -148,33 +171,37 @@ export function PlotsExtraCharges() {
                                     Extra Charges Calculator
                                 </h3>
                                 <p className="text-xs text-zinc-400 mt-0.5">
-                                    Select your plot size and tick any desired premium categories above to estimate the total cost.
+                                    Select your plot size across any category and tick desired premium attributes to preview the total investment.
                                 </p>
                             </div>
                         </div>
 
-                        {/* Switcher */}
-                        <div className="flex items-center p-1 bg-zinc-800 rounded-full border border-zinc-700">
-                            <button
-                                onClick={() => setCalcPlot("80-sq-yards")}
-                                className={`px-4 py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
-                                    calcPlot === "80-sq-yards"
-                                        ? "bg-amber-500 text-zinc-950 shadow"
-                                        : "text-zinc-300 hover:text-white"
-                                }`}
+                        {/* Plot Selector Dropdown */}
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+                            <label htmlFor="calculator-plot-select" className="text-xs text-zinc-400 font-medium shrink-0">
+                                Select Plot:
+                            </label>
+                            <select
+                                id="calculator-plot-select"
+                                value={selectedPlotId}
+                                onChange={(e) => setSelectedPlotId(e.target.value)}
+                                className="bg-zinc-800 text-white border border-zinc-700 rounded-xl px-3.5 py-2 text-xs md:text-sm font-semibold focus:outline-none focus:border-amber-400 cursor-pointer"
                             >
-                                80 SQ.YDS (Rs. 800k)
-                            </button>
-                            <button
-                                onClick={() => setCalcPlot("120-sq-yards")}
-                                className={`px-4 py-2 rounded-full text-xs font-semibold transition-all cursor-pointer ${
-                                    calcPlot === "120-sq-yards"
-                                        ? "bg-amber-500 text-zinc-950 shadow"
-                                        : "text-zinc-300 hover:text-white"
-                                }`}
-                            >
-                                120 SQ.YDS (Rs. 1.2M)
-                            </button>
+                                <optgroup label="Residential Plots">
+                                    <option value="res-80-standard">80 Sq. Yds. (Standard Plan - Rs. 770,000)</option>
+                                    <option value="res-80-equal">80 Sq. Yds. (Equal Plan - Rs. 880,000)</option>
+                                    <option value="res-120-standard">120 Sq. Yds. (Standard Plan - Rs. 1,100,000)</option>
+                                    <option value="res-120-equal">120 Sq. Yds. (Equal Plan - Rs. 1,320,000)</option>
+                                </optgroup>
+                                <optgroup label="Commercial Plots">
+                                    <option value="comm-100">100 Sq. Yds. Commercial (Rs. 2,750,000)</option>
+                                    <option value="comm-200">200 Sq. Yds. Commercial (Rs. 5,500,000)</option>
+                                </optgroup>
+                                <optgroup label="Cottage Industry Plots">
+                                    <option value="cottage-200">200 Sq. Yds. Cottage Industry (Rs. 2,200,000)</option>
+                                    <option value="cottage-400">400 Sq. Yds. Cottage Industry (Rs. 4,480,000)</option>
+                                </optgroup>
+                            </select>
                         </div>
                     </div>
 
@@ -185,20 +212,24 @@ export function PlotsExtraCharges() {
                             <div className="text-xl md:text-2xl font-mono font-bold text-white mt-1">
                                 Rs. {baseAmount.toLocaleString()}
                             </div>
-                            <span className="text-[11px] text-zinc-500 block mt-0.5">
-                                {plotsData[calcPlot].title}
+                            <span className="text-[11px] text-zinc-400 block mt-0.5 truncate">
+                                {currentPlotOption.name}
                             </span>
                         </div>
 
                         <div>
-                            <span className="text-xs text-zinc-400 block">Extra Percentage</span>
+                            <span className="text-xs text-zinc-400 block">Selected Extra %</span>
                             <div className="text-xl md:text-2xl font-mono font-bold text-amber-400 mt-1">
                                 +{totalPercentage}%
                             </div>
-                            <span className="text-[11px] text-zinc-400 block mt-0.5">
+                            <span className="text-[11px] text-zinc-400 block mt-0.5 truncate">
                                 {selectedCharges.length > 0
                                     ? selectedCharges
-                                          .map((c) => extraChargesList.find((x) => x.id === c)?.name)
+                                          .map((c) => {
+                                              const found = extraChargesList.find((x) => x.id === c);
+                                              return found ? `${found.name} (${found.percentageText})` : "";
+                                          })
+                                          .filter(Boolean)
                                           .join(", ")
                                     : "No Extra Categories Selected"}
                             </span>
@@ -210,7 +241,7 @@ export function PlotsExtraCharges() {
                                 Rs. {extraChargesSum.toLocaleString()}
                             </div>
                             <span className="text-[11px] text-zinc-500 block mt-0.5">
-                                Spread across your payment plan
+                                Added to overall plot allocation cost
                             </span>
                         </div>
 
@@ -229,6 +260,14 @@ export function PlotsExtraCharges() {
                                 <ArrowRight size={13} />
                             </a>
                         </div>
+                    </div>
+
+                    {/* Official Brochure Disclaimer */}
+                    <div className="mt-6 pt-4 border-t border-zinc-800 flex items-center gap-2 text-[11px] text-zinc-400">
+                        <Info size={14} className="text-amber-400 shrink-0" />
+                        <span>
+                            Brochure Specification: These charges are listed separately in the official brochure and are not included in the standard plot prices.
+                        </span>
                     </div>
                 </div>
             </div>
