@@ -1,4 +1,4 @@
-﻿export interface RoomDetail {
+export interface RoomDetail {
     id: string;
     name: string;
     category: "bedroom" | "bathroom" | "living" | "kitchen" | "outdoor";
@@ -77,22 +77,22 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
         rooms: {
             bedrooms: {
                 count: 2,
-                dimension: "10â€™-0â€ x 10â€™-0â€",
+                dimension: "10'-0\" x 10'-0\"",
                 details: "2 good-sized bedrooms with windows, wardrobe space, and their own private bathrooms."
             },
             bathrooms: {
                 count: 2,
-                dimension: "4â€™-0â€ x 6â€™-6â€",
+                dimension: "4'-0\" x 6'-6\"",
                 details: "2 clean modern bathrooms with good tiles and proper fittings."
             },
             livingLounge: {
                 name: "TV Lounge + Living",
-                dimension: "10â€™-0â€ x 12â€™-0â€",
+                dimension: "10'-0\" x 12'-0\"",
                 details: "A comfortable living room where the whole family can sit together and watch TV."
             },
             kitchenDining: {
-                name: "1 Kitchen + Dinning",
-                dimension: "10â€™-0â€ x 12â€™-0â€",
+                name: "1 Kitchen + Dining",
+                dimension: "10'-0\" x 12'-0\"",
                 details: "A practical kitchen with space for cooking and a dining area for family meals."
             }
         },
@@ -101,7 +101,7 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 id: "bed1",
                 name: "Master Bedroom",
                 category: "bedroom",
-                dimension: "10â€™-0â€ x 10â€™-0â€",
+                dimension: "10'-0\" x 10'-0\"",
                 description: "A spacious master bedroom with a window, wardrobe space, and its own private bathroom.",
                 features: ["100 sq. ft. area", "Private Attached Bathroom", "Large Window", "Fan & Light Wiring"],
                 svgRect: { x: 30, y: 30, width: 170, height: 160, labelX: 115, labelY: 110 }
@@ -110,7 +110,7 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 id: "bed2",
                 name: "Bedroom 2",
                 category: "bedroom",
-                dimension: "10â€™-0â€ x 10â€™-0â€",
+                dimension: "10'-0\" x 10'-0\"",
                 description: "Second bedroom ideal for children or guests, with good ventilation and its own bathroom.",
                 features: ["100 sq. ft. area", "Private Attached Bathroom", "Ventilation Window", "Tiled Floor"],
                 svgRect: { x: 300, y: 30, width: 170, height: 160, labelX: 385, labelY: 110 }
@@ -119,7 +119,7 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 id: "bath1",
                 name: "Bathroom 1",
                 category: "bathroom",
-                dimension: "4â€™-0â€ x 6â€™-6â€",
+                dimension: "4'-0\" x 6'-6\"",
                 description: "Private ensuite bathroom with contemporary vanity counter and waterproof finishes.",
                 features: ["26 sq. ft. area", "Exhaust Duct Connection", "Premium Ceramic Fittings", "Shower Area"],
                 svgRect: { x: 205, y: 30, width: 90, height: 80, labelX: 250, labelY: 70 }
@@ -128,7 +128,7 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 id: "bath2",
                 name: "Bathroom 2",
                 category: "bathroom",
-                dimension: "4â€™-0â€ x 6â€™-6â€",
+                dimension: "4'-0\" x 6'-6\"",
                 description: "Ensuite bath serving bedroom 2 with modern plumbing and anti-slip flooring.",
                 features: ["26 sq. ft. area", "Modern Sanitary Ware", "Waterproof Wall Tiles", "Quality Fixtures"],
                 svgRect: { x: 205, y: 115, width: 90, height: 75, labelX: 250, labelY: 152 }
@@ -137,16 +137,16 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 id: "lounge",
                 name: "TV Lounge + Living",
                 category: "living",
-                dimension: "10â€™-0â€ x 12â€™-0â€",
+                dimension: "10'-0\" x 12'-0\"",
                 description: "The main living area of the home -- comfortable and connected to the bedrooms and entrance.",
                 features: ["120 sq. ft. area", "Media Wall Ready", "High Ceiling Clearance", "Recessed LED Lighting"],
                 svgRect: { x: 30, y: 195, width: 230, height: 175, labelX: 145, labelY: 285 }
             },
             {
                 id: "kitchen",
-                name: "Kitchen + Dinning",
+                name: "Kitchen + Dining",
                 category: "kitchen",
-                dimension: "10â€™-0â€ x 12â€™-0â€",
+                dimension: "10'-0\" x 12'-0\"",
                 description: "A practical kitchen with counter space and a family dining area.",
                 features: ["120 sq. ft. area", "Granite Countertops", "Dedicated Dining Space", "Exhaust & Gas Points"],
                 svgRect: { x: 265, y: 195, width: 205, height: 175, labelX: 367, labelY: 285 }
@@ -158,60 +158,60 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 dimension: "Compact Entrance",
                 description: "A covered front entrance for easy and secure access to your home.",
                 features: ["Covered Foyer", "Main Security Door", "Intercom Conduit", "Planter Area"],
-                svgRect: { x: 30, y: 375, width: 440, height: 75, labelX: 250, labelY: 412 }
+                svgRect: { x: 30, y: 380, width: 440, height: 80, labelX: 250, labelY: 420 }
             }
         ],
         paymentPlan: {
-            title: "80 Sq. Yards Villa Payment Plan",
-            tagline: "Pay in small monthly installments for 5 years. Get your home keys in just 2 years.",
-            duration: "5 Years Payment Plan",
-            possessionTime: "Keys Ready in 2 Years",
+            title: "5 Years Easy Payment Plan",
+            tagline: "Move In After Just 2 Years While Continuing Your Payments",
+            duration: "5 Years (60 Months)",
+            possessionTime: "Within 2 Years",
             highlights: [
-                "Easy Monthly Installments",
-                "Get Your Keys in 2 Years",
-                "Pay Over 5 Years Total",
-                "100% Legal & Approved",
-                "Move into your home after 2 years while paying the rest over 5 years"
+                "Move into your home after just 2 years",
+                "Spread your payments comfortably across 5 years (60 months)",
+                "Small monthly installments that fit your family budget",
+                "Clear payment stages with no surprises or hidden fees",
+                "Clear legal ownership documentation"
             ],
             breakdownSteps: [
                 {
                     stage: "Booking",
-                    percentage: "15%",
-                    timing: "When you book",
-                    description: "Pay the first amount to reserve your plot and confirm your booking."
+                    percentage: "10%",
+                    timing: "At the Start",
+                    description: "Pay the first amount to reserve your plot on the master plan."
                 },
                 {
                     stage: "Confirmation",
                     percentage: "10%",
                     timing: "Within 30-60 Days",
-                    description: "Pay the second amount and receive your official allocation letter."
+                    description: "Receive your official allocation letter after the second payment."
                 },
                 {
                     stage: "60 Monthly Installments",
                     percentage: "50%",
                     timing: "Over 5 Years (60 Months)",
-                    description: "Pay small monthly amounts for 5 years â€” easy on the pocket."
+                    description: "Pay small monthly amounts for 5 years — easy on the pocket."
                 },
                 {
                     stage: "Get Your Keys!",
                     percentage: "15%",
                     timing: "In 2 Years (Month 24)",
-                    description: "You receive the keys to your completed home in just 2 years!"
+                    description: "You receive the keys and can move into your home after just 2 years!"
                 },
                 {
                     stage: "Remaining Payments",
                     percentage: "10%",
                     timing: "Years 3 to 5",
-                    description: "Live in your home and finish paying the remaining small amount."
+                    description: "Continue living in your home while paying off the small remaining balance."
                 }
             ]
         },
         highlights: [
-            "2 Bed + 2 Bath Configuration",
-            "Optimal 10' x 12' Living & TV Lounge",
-            "Generous 10' x 12' Kitchen + Dining",
-            "Key Handover in 2 Years",
-            "5-Year Relaxed Installment Structure"
+            "2 Full Bedrooms with Private Ensuite Bathrooms",
+            "Family TV Lounge and Connected Living Area",
+            "Practical Kitchen with Dedicated Dining Space",
+            "Keys & Possession Handed Over in 2 Years",
+            "5-Year Flexible Installments Schedule"
         ]
     },
     "120-sq-yards": {
@@ -221,27 +221,27 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
         sizeSqFt: 1080,
         project: "Indus Enclave",
         tagline: "Expansive Luxury & Enhanced Architectural Grandeur",
-        summary: "An expansive executive 2-bedroom residence offering heightened luxury, enlarged bedrooms (12â€™ x 13â€™), spacious baths, premium finishes, and a sprawling living sanctuary.",
+        summary: "An expansive executive 2-bedroom residence offering heightened luxury, enlarged bedrooms (12' x 13'), spacious baths, premium finishes, and a sprawling living sanctuary.",
         image: "/assets/house.png",
         rooms: {
             bedrooms: {
                 count: 2,
-                dimension: "12â€™-0â€ x 13â€™-0â€",
+                dimension: "12'-0\" x 13'-0\"",
                 details: "2 Grand master bedrooms featuring generous walk-in wardrobe spaces and private ensuite baths."
             },
             bathrooms: {
                 count: 2,
-                dimension: "5â€™-0â€ x 7â€™-0â€",
+                dimension: "5'-0\" x 7'-0\"",
                 details: "2 Luxury executive bathrooms with premium vanity basins, glass shower enclosures, and designer tiles."
             },
             livingLounge: {
                 name: "TV Lounge + Living",
-                dimension: "12â€™-0â€ x 13â€™-0â€",
+                dimension: "12'-0\" x 13'-0\"",
                 details: "A big and comfortable living room with large windows and plenty of space for the family."
             },
             kitchenDining: {
-                name: "1 Kitchen + Dinning",
-                dimension: "7â€™-0â€ x 8â€™-0â€",
+                name: "1 Kitchen + Dining",
+                dimension: "7'-0\" x 8'-0\"",
                 details: "A well-designed kitchen with good counter space and room for a dining table nearby."
             }
         },
@@ -250,7 +250,7 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 id: "bed1",
                 name: "Master Bedroom 1",
                 category: "bedroom",
-                dimension: "12â€™-0â€ x 13â€™-0â€",
+                dimension: "12'-0\" x 13'-0\"",
                 description: "A large master bedroom with plenty of space for a double bed, wardrobe, and its own bathroom.",
                 features: ["156 sq. ft. area", "Attached Executive Ensuite", "Balcony/Garden View", "Air-Conditioner Points"],
                 svgRect: { x: 30, y: 30, width: 195, height: 175, labelX: 127, labelY: 117 }
@@ -259,7 +259,7 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 id: "bed2",
                 name: "Master Bedroom 2",
                 category: "bedroom",
-                dimension: "12â€™-0â€ x 13â€™-0â€",
+                dimension: "12'-0\" x 13'-0\"",
                 description: "Second big bedroom with the same size and comfort as the first, with its own bathroom.",
                 features: ["156 sq. ft. area", "Attached Ensuite Bath", "Large Picture Window", "High-End Tile Flooring"],
                 svgRect: { x: 275, y: 30, width: 195, height: 175, labelX: 372, labelY: 117 }
@@ -268,7 +268,7 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 id: "bath1",
                 name: "Executive Bath 1",
                 category: "bathroom",
-                dimension: "5â€™-0â€ x 7â€™-0â€",
+                dimension: "5'-0\" x 7'-0\"",
                 description: "A full-size bathroom with good quality fittings, clean tiles, and a shower area.",
                 features: ["35 sq. ft. area", "Imported Sanitary Ware", "Glass Partition Space", "Anti-Bacterial Finishes"],
                 svgRect: { x: 230, y: 30, width: 40, height: 85, labelX: 250, labelY: 72 }
@@ -277,7 +277,7 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 id: "bath2",
                 name: "Executive Bath 2",
                 category: "bathroom",
-                dimension: "5â€™-0â€ x 7â€™-0â€",
+                dimension: "5'-0\" x 7'-0\"",
                 description: "Full-size bathroom attached to Bedroom 2 with a mirror, basin, and proper water pressure.",
                 features: ["35 sq. ft. area", "Premium Ceramic Basins", "Chrome Water Fittings", "Exhaust Ventilation"],
                 svgRect: { x: 230, y: 120, width: 40, height: 85, labelX: 250, labelY: 162 }
@@ -286,16 +286,16 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                 id: "lounge",
                 name: "TV Lounge + Living",
                 category: "living",
-                dimension: "12â€™-0â€ x 13â€™-0â€",
+                dimension: "12'-0\" x 13'-0\"",
                 description: "A big and open living room where the family can relax, sit together, and enjoy time at home.",
                 features: ["156 sq. ft. area", "Chandelier Hook Point", "Wall Niches & LED Trims", "Multi-Seat Capacity"],
                 svgRect: { x: 30, y: 210, width: 250, height: 170, labelX: 155, labelY: 295 }
             },
             {
                 id: "kitchen",
-                name: "1 Kitchen + Dinning",
+                name: "1 Kitchen + Dining",
                 category: "kitchen",
-                dimension: "7â€™-0â€ x 8â€™-0â€",
+                dimension: "7'-0\" x 8'-0\"",
                 description: "A practical kitchen with good counter space and easy access to the dining area.",
                 features: ["56 sq. ft. area", "Modular Countertops", "Cooktop & Hood Space", "Twin Stainless Sink"],
                 svgRect: { x: 285, y: 210, width: 185, height: 170, labelX: 377, labelY: 295 }
@@ -311,22 +311,22 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
             }
         ],
         paymentPlan: {
-            title: "120 Sq. Yards Villa Payment Plan",
-            tagline: "Pay in small monthly installments for 5 years. Get your home keys in just 2 years.",
-            duration: "5 Years Payment Plan",
-            possessionTime: "Keys Ready in 2 Years",
+            title: "5 Years Easy Payment Plan",
+            tagline: "Move In After Just 2 Years While Continuing Your Payments",
+            duration: "5 Years (60 Months)",
+            possessionTime: "Within 2 Years",
             highlights: [
-                "Easy Monthly Installments",
-                "Get Your Keys in 2 Years",
-                "Pay Over 5 Years Total",
-                "Great Investment Potential",
-                "Move into your 120 Sq. Yds home in just 2 years"
+                "Move into your executive villa after just 2 years",
+                "Spread payments comfortably over 5 years (60 months)",
+                "Small monthly installments designed for financial peace of mind",
+                "Full ownership transfer upon completion of the plan",
+                "Approved NOC and complete documentation provided"
             ],
             breakdownSteps: [
                 {
                     stage: "Booking",
-                    percentage: "15%",
-                    timing: "When you book",
+                    percentage: "10%",
+                    timing: "At the Start",
                     description: "Pay the first amount to reserve your plot on the master plan."
                 },
                 {
@@ -339,7 +339,7 @@ export const villasData: Record<"80-sq-yards" | "120-sq-yards", VillaFloorPlan> 
                     stage: "60 Monthly Installments",
                     percentage: "50%",
                     timing: "Over 5 Years (60 Months)",
-                    description: "Easy monthly payments â€” small and manageable every month for 5 years."
+                    description: "Easy monthly payments — small and manageable every month for 5 years."
                 },
                 {
                     stage: "Get Your Keys!",
@@ -380,8 +380,8 @@ export const comparisonSpecs = [
     },
     {
         feature: "Bedroom Dimensions",
-        villa80: "10â€™-0â€ x 10â€™-0â€",
-        villa120: "12â€™-0â€ x 13â€™-0â€",
+        villa80: "10'-0\" x 10'-0\"",
+        villa120: "12'-0\" x 13'-0\"",
         category: "Dimensions"
     },
     {
@@ -392,20 +392,20 @@ export const comparisonSpecs = [
     },
     {
         feature: "Bathroom Dimensions",
-        villa80: "4â€™-0â€ x 6â€™-6â€",
-        villa120: "5â€™-0â€ x 7â€™-0â€",
+        villa80: "4'-0\" x 6'-6\"",
+        villa120: "5'-0\" x 7'-0\"",
         category: "Dimensions"
     },
     {
         feature: "TV Lounge + Living",
-        villa80: "10â€™-0â€ x 12â€™-0â€",
-        villa120: "12â€™-0â€ x 13â€™-0â€",
+        villa80: "10'-0\" x 12'-0\"",
+        villa120: "12'-0\" x 13'-0\"",
         category: "Living Spaces"
     },
     {
         feature: "1 Kitchen + Dining",
-        villa80: "10â€™-0â€ x 12â€™-0â€",
-        villa120: "7â€™-0â€ x 8â€™-0â€",
+        villa80: "10'-0\" x 12'-0\"",
+        villa120: "7'-0\" x 8'-0\"",
         category: "Living Spaces"
     },
     {
@@ -445,11 +445,11 @@ export const villaFaqs = [
     },
     {
         q: "What is included in the 80 SQ. Yards Floor Plan?",
-        a: "The 80 Sq. Yards villa floor plan at Indus Enclave includes 2 Bedrooms (10â€™-0â€ x 10â€™-0â€ each), 2 Bathrooms (4â€™-0â€ x 6â€™-6â€ each), a central TV Lounge + Living (10â€™-0â€ x 12â€™-0â€), and 1 Kitchen + Dining (10â€™-0â€ x 12â€™-0â€)."
+        a: "The 80 Sq. Yards villa floor plan at Indus Enclave includes 2 Bedrooms (10'-0\" x 10'-0\" each), 2 Bathrooms (4'-0\" x 6'-6\" each), a central TV Lounge + Living (10'-0\" x 12'-0\"), and 1 Kitchen + Dining (10'-0\" x 12'-0\")."
     },
     {
         q: "What is included in the 120 SQ. Yards Floor Plan?",
-        a: "The 120 Sq. Yards villa floor plan features enlarged executive dimensions: 2 Bedrooms (12â€™-0â€ x 13â€™-0â€ each), 2 Bathrooms (5â€™-0â€ x 7â€™-0â€ each), a spacious TV Lounge + Living (12â€™-0â€ x 13â€™-0â€), and 1 Kitchen + Dining (7â€™-0â€ x 8â€™-0â€)."
+        a: "The 120 Sq. Yards villa floor plan features enlarged executive dimensions: 2 Bedrooms (12'-0\" x 13'-0\" each), 2 Bathrooms (5'-0\" x 7'-0\" each), a spacious TV Lounge + Living (12'-0\" x 13'-0\"), and 1 Kitchen + Dining (7'-0\" x 8'-0\")."
     },
     {
         q: "Can I customize the interior finishes of my villa?",
@@ -460,4 +460,3 @@ export const villaFaqs = [
         a: "You can schedule a private site visit or reserve your villa directly by filling out the inquiry form on this page, calling our sales team at +92 329 302 3156 / +92 316 822 8918, or visiting our office at Osif Arcade, Gulshan-e-Iqbal, Karachi."
     }
 ];
-
