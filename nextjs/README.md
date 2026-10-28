@@ -18,7 +18,7 @@ Technical frontend implementation for the **Indus Enclave** real estate web plat
 
 ## 📂 Key Directory Layout
 
-- `app/` — Application routes (`/`, `/about`, `/plots`, `/villas`, `/location`, `/gallery`, `/media`, `/inquiry`, `/contact`, `/faq`)
+- `app/` — Application routes (`/`, `/about`, `/plots`, `/villas`, `/location`, `/gallery`, `/media`, `/inquiry`, `/contact`, `/faq`, `/privacy-policy`)
 - `components/` — Global navigation, footer, providers, and shared UI widgets
 - `sections/` — Modular, animated page-level sections
 - `data/` — Type-safe content definitions, milestones, video directories, and schemas

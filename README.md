@@ -51,6 +51,7 @@ estate-nextjs/
     │   ├── inquiry/page.tsx       # Dedicated property inquiry and booking form
     │   ├── contact/page.tsx       # Contact page (Office locations, direct numbers, form)
     │   ├── faq/page.tsx           # Categorized FAQ search and accordion view
+    │   ├── privacy-policy/page.tsx# Privacy policy & data protection guidelines
     │   └── globals.css            # Global CSS, Tailwind utilities, and root variables
     │
     ├── components/                # Reusable UI components
@@ -66,6 +67,7 @@ estate-nextjs/
     │   ├── testimonials.tsx       # Client reviews marquee & cards
     │   ├── call-to-action.tsx     # Final conversion CTA sections
     │   ├── contact.tsx            # Interactive contact form section
+    │   ├── privacy/               # Privacy policy hero & sticky content sections
     │   ├── plots/                 # Plot-specific sections (Calculator, Plans, Dimensions)
     │   ├── villas/                # Villa-specific sections (Floor plans, Features, FAQs)
     │   ├── location/              # Location-specific sections (Drive times, Map, Landmarks)
