@@ -251,7 +251,7 @@ export function Footer() {
                     <p>Copyright 2026 © Indus Enclave — A Project Of Al-Ashraf Group Of Companies. All Rights Reserved.</p>
                     <div className="flex items-center gap-6">
                         <a href="/privacy-policy" className="hover:text-white transition-colors duration-200">Privacy Policy</a>
-                        <a href="#" className="hover:text-white transition-colors duration-200">Terms of Service</a>
+                        <a href="/terms-of-service" className="hover:text-white transition-colors duration-200">Terms of Service</a>
                         <a href="#" className="hover:text-white transition-colors duration-200">Cookie Policy</a>
                     </div>
                 </div>
