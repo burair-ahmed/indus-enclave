@@ -1,5 +1,6 @@
-﻿"use client";
+"use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Building2 } from "lucide-react";
 
@@ -50,19 +51,25 @@ export function AboutHero() {
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
             >
-                <button className="bg-zinc-50 hover:bg-zinc-200 px-6 py-2.5 rounded-md text-zinc-800 text-sm font-medium cursor-pointer transition">
-                    Our Listings
-                </button>
-                <button className="border border-slate-200 text-zinc-50 px-5 py-2.5 rounded-md text-sm font-medium cursor-pointer transition group">
+                <Link
+                    href="/plots"
+                    className="bg-zinc-50 hover:bg-zinc-200 px-6 py-2.5 rounded-md text-zinc-800 text-sm font-medium cursor-pointer transition inline-flex items-center justify-center shadow-md hover:-translate-y-0.5 duration-200"
+                >
+                    Explore Plots
+                </Link>
+                <Link
+                    href="/contact"
+                    className="border border-slate-200 text-zinc-50 px-5 py-2.5 rounded-md text-sm font-medium cursor-pointer transition group inline-flex items-center justify-center shadow-sm hover:-translate-y-0.5 duration-200"
+                >
                     <div className="relative overflow-hidden">
                         <span className="block transition-transform duration-200 group-hover:-translate-y-full">
-                            Meet the Team
+                            Contact Our Team
                         </span>
                         <span className="absolute top-0 left-0 block transition-transform duration-200 group-hover:translate-y-0 translate-y-full">
-                            Meet the Team
+                            Contact Our Team
                         </span>
                     </div>
-                </button>
+                </Link>
             </motion.div>
         </motion.section>
     );

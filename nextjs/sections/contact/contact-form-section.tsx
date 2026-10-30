@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { CheckCircle2, Send, Sparkles, Building, Clock, ShieldCheck } from "lucide-react";
 
-const houseImage = "/assets/house.png";
+const contactFormImage = "/assets/sports.webp";
 
 const inquiryTypes = [
     "Buying Property",
@@ -230,10 +230,10 @@ export function ContactFormSection() {
                         >
                             <div className="relative w-full h-[320px] sm:h-[380px] overflow-hidden">
                                 <Image
-                                    src={houseImage}
-                                    alt="Indus Enclave Experience Office"
+                                    src={contactFormImage}
+                                    alt="Indus Enclave Sports Complex & Community"
                                     fill
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 select-none brightness-90"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 select-none"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
 

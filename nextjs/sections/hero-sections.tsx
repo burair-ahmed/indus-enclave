@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { HomeIcon } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -39,16 +40,22 @@ export function HeroSection() {
             >
                 80 & 120 sq. yard plots available on easy monthly installments. Fully approved by SBCA & SDA. Located at M-9 Motorway Exit 8, Nooriabad.
             </motion.p>
-            <motion.div className="relative z-10 flex items-center gap-4 mt-8"
+            <motion.div className="relative z-10 flex flex-wrap items-center justify-center gap-4 mt-8"
                 initial={{ y: 50, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
             >
-                <button className="bg-zinc-50 hover:bg-zinc-200 px-6 py-2.5 rounded-md text-zinc-800 text-sm font-medium cursor-pointer transition">
+                <Link
+                    href="/plots"
+                    className="bg-zinc-50 hover:bg-zinc-200 px-6 py-2.5 rounded-md text-zinc-800 text-sm font-medium cursor-pointer transition inline-flex items-center justify-center shadow-md hover:-translate-y-0.5 duration-200"
+                >
                     View Plots & Prices
-                </button>
-                <button className="border border-slate-200 text-zinc-50 px-5 py-2.5 rounded-md text-sm font-medium cursor-pointer transition group">
+                </Link>
+                <Link
+                    href="/contact"
+                    className="border border-slate-200/80 bg-black/30 backdrop-blur-sm hover:bg-white/10 text-zinc-50 px-5 py-2.5 rounded-md text-sm font-medium cursor-pointer transition group inline-flex items-center justify-center shadow-sm hover:-translate-y-0.5 duration-200"
+                >
                     <div className="relative overflow-hidden">
                         <span className="block transition-transform duration-200 group-hover:-translate-y-full">
                             Book a Free Site Visit
@@ -57,7 +64,7 @@ export function HeroSection() {
                             Book a Free Site Visit
                         </span>
                     </div>
-                </button>
+                </Link>
             </motion.div>
         </motion.section>
     )

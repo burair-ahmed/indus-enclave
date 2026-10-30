@@ -12,7 +12,7 @@ const locations = [
         phone: "+92 329 302 3156",
         email: "info@indusenclave.com",
         hours: "Mon - Sat: 9:00 AM - 6:00 PM",
-        image: "/assets/house.png",
+        image: "/assets/IMG-20231027-WA0030-min.webp",
         mapUrl: "https://www.google.com/maps/search/No.+7+%26+8,+Mezzanine+Floor,+Osif+Arcade,+Block+No.+15,+Gulshan-e-Iqbal,+Karachi./@24.9043252,67.0776129,19z/data=!5m1!1e1?entry=ttu"
     },
     {
@@ -22,7 +22,7 @@ const locations = [
         phone: "+92 316 822 8918",
         email: "info@indusenclave.com",
         hours: "Mon - Sat: 10:00 AM - 6:00 PM",
-        image: "/assets/galleryImage1.png",
+        image: "/assets/IMG-20231027-WA0029-min.webp",
         mapUrl: "https://www.google.com/maps/search/No.+7+%26+8,+Mezzanine+Floor,+Osif+Arcade,+Block+No.+15,+Gulshan-e-Iqbal,+Karachi./@24.9043252,67.0776129,19z/data=!5m1!1e1?entry=ttu"
     }
 ];
