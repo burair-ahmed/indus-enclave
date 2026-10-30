@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const houseImage = "/assets/house.png";
+const contactImage = "/assets/sports.webp";
 
 export function Contact() {
     return (
@@ -151,12 +151,15 @@ export function Contact() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    <div className="relative w-[382px] h-[455px] overflow-hidden rounded-xl">
-                        <Image src={houseImage} alt="Contact House" width={382} height={455} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 select-none brightness-80" />
+                    <div className="relative w-[382px] h-[455px] overflow-hidden rounded-2xl shadow-xl border border-zinc-200/80">
+                        <Image src={contactImage} alt="Indus Enclave Sports Complex & Community" width={764} height={910} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 select-none" />
+
+                        {/* Dark Gradient Overlay for Readability */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none" />
 
                         {/* Details Content Overlay */}
-                        <div className="absolute bottom-10 left-10 flex flex-col gap-2.5 z-10">
-                            <span className="text-base text-white">
+                        <div className="absolute bottom-10 left-10 right-10 flex flex-col gap-2.5 z-10">
+                            <span className="text-sm font-bold tracking-wider uppercase text-amber-400">
                                 CONTACT DETAILS
                             </span>
                             <motion.div className="flex flex-col gap-1 text-sm text-white"
@@ -165,10 +168,10 @@ export function Contact() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                             >
-                                <p className="text-xs text-zinc-300">Osif Arcade, Gulshan-e-Iqbal, Karachi</p>
-                                <p className="text-xs text-zinc-300">+92 329 302 3156 / +92 316 822 8918</p>
-                                <p className="mt-1">Mon - Fri: 10 AM - 6 PM</p>
-                                <p>Sat: 10 AM - 4 PM</p>
+                                <p className="text-xs text-zinc-200">Osif Arcade, Gulshan-e-Iqbal, Karachi</p>
+                                <p className="text-xs text-zinc-200 font-mono">+92 329 302 3156 / +92 316 822 8918</p>
+                                <p className="mt-1 text-xs text-zinc-300">Mon - Fri: 10 AM - 6 PM</p>
+                                <p className="text-xs text-zinc-300">Sat: 10 AM - 4 PM</p>
                             </motion.div>
                         </div>
                     </div>
