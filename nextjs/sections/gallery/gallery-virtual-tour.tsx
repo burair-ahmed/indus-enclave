@@ -117,6 +117,25 @@ export function GalleryVirtualTour() {
                             >
                                 Step inside the spiritual landmark of Indus Enclave. Take an immersive 360° walkthrough of Masjid Al-Jabbar — featuring grand prayer halls, tranquil water ponds, and modern Islamic architecture.
                             </motion.p>
+
+                            <motion.div
+                                className="flex items-center gap-2 mt-4"
+                                initial={{ y: 20, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.3, type: "spring", stiffness: 260, damping: 30 }}
+                            >
+                                <span className="text-zinc-500 text-xs">Virtual Tour Created by</span>
+                                <a
+                                    href="https://armarchengineering.com"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 text-xs font-semibold transition-colors"
+                                >
+                                    <span>ArmArch Engineering</span>
+                                    <ExternalLink size={11} />
+                                </a>
+                            </motion.div>
                         </div>
 
                         <motion.div

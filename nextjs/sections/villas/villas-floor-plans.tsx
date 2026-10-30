@@ -673,28 +673,7 @@ export function VillasFloorPlans() {
                         </motion.div>
                     </AnimatePresence>
 
-                    {/* Booking Prompt */}
-                    <div className="bg-amber-50 border border-amber-200/80 rounded-3xl p-6">
-                        <div className="flex items-start gap-3">
-                            <div className="p-2 rounded-xl bg-amber-500 text-white shrink-0 mt-0.5">
-                                <Sparkles size={18} />
-                            </div>
-                            <div>
-                                <h4 className="text-base font-bold text-amber-950">
-                                    Interested in {currentVilla.title}?
-                                </h4>
-                                <p className="text-xs text-amber-800/90 mt-1 leading-relaxed">
-                                    Lock in your preferred villa location with our 5-year easy installments plan and guaranteed 2-year possession.
-                                </p>
-                                <a
-                                    href="#inquire"
-                                    className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white text-xs font-semibold rounded-xl transition shadow-sm"
-                                >
-                                    <span>Request Allocation Deed</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
 

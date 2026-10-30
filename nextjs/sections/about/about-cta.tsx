@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function AboutCta() {
     return (
-        <section className="py-36 px-4 md:px-16 lg:px-24 xl:px-32 w-full flex flex-col items-center justify-center text-center">
+        <section className="pt-20 md:pt-28 px-4 md:px-16 lg:px-24 xl:px-32 w-full flex flex-col items-center justify-center text-center">
             <div className="max-w-4xl mx-auto flex flex-col items-center">
                 <div className="relative w-full max-w-sm overflow-hidden md:max-w-[600px] h-[200px] md:h-[220px] mb-12 flex justify-center items-center md:overflow-visible group/cta-images select-none">
                     <Image

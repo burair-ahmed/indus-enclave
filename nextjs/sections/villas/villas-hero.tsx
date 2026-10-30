@@ -52,6 +52,21 @@ export function VillasHero() {
                     and an easy <span className="text-white font-medium">5-Year Monthly Installment Plan</span>.
                 </motion.p>
 
+                {/* Sold Out Notice */}
+                <motion.div
+                    className="mt-6 bg-red-500/15 backdrop-blur-md border border-red-400/30 rounded-2xl px-6 py-4 max-w-2xl w-full"
+                    initial={{ y: 30, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.35, duration: 0.5 }}
+                >
+                    <p className="text-red-200 text-sm md:text-base font-semibold text-center">
+                        ⚠ Villas are no longer available for sale. All units have been sold out.
+                    </p>
+                    <p className="text-red-300/70 text-xs text-center mt-1">
+                        Please explore our available <a href="/plots" className="underline text-white hover:text-amber-300 transition">residential &amp; commercial plots</a> instead.
+                    </p>
+                </motion.div>
+
                 {/* Key Metrics / Highlights Bar */}
                 <motion.div
                     className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-8 w-full max-w-3xl"
