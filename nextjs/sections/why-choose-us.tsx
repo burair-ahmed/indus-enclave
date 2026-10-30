@@ -4,8 +4,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
-import { whyChooseUsData } from "../data/data";
-const houseImage = "/assets/house.png";
+import { whyChooseUsData } from "@/data/data";
+const whyChooseUsImage = "/assets/IMG-20231027-WA0048-min.webp";
 
 export function WhyChooseUs() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -89,26 +89,27 @@ export function WhyChooseUs() {
                         Our team is here to guide you every step of the way — from your first question to the day you move into your new home.
                     </motion.p>
                     
-                    <motion.div className="relative w-121.5 h-102.75 rounded-xl overflow-hidden shadow-sm bg-zinc-100 max-w-full" 
+                    <motion.div className="relative w-full aspect-[4/3] md:aspect-auto md:w-121.5 md:h-102.75 rounded-2xl overflow-hidden shadow-lg border border-zinc-200/80 bg-zinc-100 max-w-full" 
                         initial={{ y: 50, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                     >
                         {/* Default Image */}
-                        <Image src={houseImage} alt="Luxury Residential Home" width={486} height={411}
-                            className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-in-out ${
-                                openIndex === null ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
-                            }`}
+                        <Image src={whyChooseUsImage} alt="Indus Enclave On-Ground Boundary & Infrastructure" width={600} height={450} priority
+                            className="absolute inset-0 w-full h-full object-cover object-center transition-all duration-500 ease-in-out"
                         />
-                        {/* Accordion-specific images */}
-                        {whyChooseUsData.map((item, index) => (
-                            <Image key={index} src={item.image} alt={item.title} width={486} height={411}
-                                className={`absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-in-out ${
-                                    openIndex === index ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
-                                }`}
-                            />
-                        ))}
+                        {/* Elegant overlay badge */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                        <div className="absolute bottom-4 left-4 right-4 p-3.5 bg-white/95 backdrop-blur-md rounded-xl border border-white/60 shadow-md flex items-center justify-between">
+                            <div>
+                                <p className="text-xs font-semibold text-zinc-900">On-Ground Infrastructure</p>
+                                <p className="text-[11px] text-zinc-500">M-9 Motorway Corridor • Karachi</p>
+                            </div>
+                            <span className="px-2.5 py-1 text-[10px] font-semibold tracking-wide uppercase bg-emerald-600 text-white rounded-full">
+                                Verified Site
+                            </span>
+                        </div>
                     </motion.div>
                 </div>
             </div>

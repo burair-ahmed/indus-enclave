@@ -11,33 +11,33 @@ export interface WhyChooseUsItem {
 export const whyChooseUsData: WhyChooseUsItem[] = [
     {
         icon: <ShieldCheck className="size-5 text-zinc-600" />,
-        title: "All Properties are Government Approved",
-        description: "Every plot and villa at Indus Enclave is fully approved by SBCA & SDA. You get proper paperwork, so your money is safe.",
-        image: "/assets/house.png"
+        title: "100% Government Approved (SBCA & SDA)",
+        description: "Indus Enclave is fully approved by the Sindh Building Control Authority (SBCA) and Sehwan Development Authority (SDA). Clear land titles, secure documentation, and complete legal peace of mind.",
+        image: "/assets/IMG-20231027-WA0048-min.webp"
     },
     {
         icon: <MapPin className="size-5 text-zinc-600" />,
-        title: "We Know This Area Very Well",
-        description: "Our team lives and works near the M-9 Motorway. We can tell you everything about the location, roads, schools, and nearby facilities.",
-        image: "/assets/galleryImage1.png"
-    },
-    {
-        icon: <Handshake className="size-5 text-zinc-600" />,
-        title: "We Help You from Start to Finish",
-        description: "From your first question to the day you get your keys — we are with you every step of the way. No hidden steps, no confusion.",
-        image: "/assets/galleryImage2.png"
+        title: "Prime M-9 Motorway Location",
+        description: "Strategically located directly along the booming Karachi-Hyderabad M-9 Motorway corridor, offering seamless high-speed connectivity and excellent future capital appreciation.",
+        image: "/assets/IMG-20231027-WA0048-min.webp"
     },
     {
         icon: <Landmark className="size-5 text-zinc-600" />,
-        title: "Easy 3-Year Installment Plan",
-        description: "You can pay in small monthly installments over 3 years. No need to pay everything at once — we make it simple and manageable.",
-        image: "/assets/galleryImage3.png"
+        title: "Flexible 5-Year Installment Plan",
+        description: "Own your residential plot with manageable monthly payments starting from just Rs. 5,000/month over a 60-month easy plan with zero hidden surcharges.",
+        image: "/assets/IMG-20231027-WA0048-min.webp"
+    },
+    {
+        icon: <Handshake className="size-5 text-zinc-600" />,
+        title: "Rapid On-Ground Development",
+        description: "Physical infrastructure is actively underway — featuring completed precast boundary walls, wide planned boulevards, underground utility network, and the grand Masjid Al-Jabbar.",
+        image: "/assets/IMG-20231027-WA0048-min.webp"
     },
     {
         icon: <Headset className="size-5 text-zinc-600" />,
-        title: "Our Team is Always Available",
-        description: "Call, WhatsApp, or visit us anytime. We are always ready to answer your questions and help you book your plot.",
-        image: "/assets/galleryImage4.png"
+        title: "Dedicated Al-Ashraf Group Support",
+        description: "Backed by the proven reputation of Al-Ashraf Group. Our on-site and customer advisory team provides transparent guidance from plot selection through possession.",
+        image: "/assets/IMG-20231027-WA0048-min.webp"
     }
 ];
 
