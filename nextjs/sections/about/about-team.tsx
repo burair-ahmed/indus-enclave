@@ -1,28 +1,28 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const team = [
+const highlights = [
     {
-        name: "Arjun Mehta",
-        role: "Founder & Managing Director",
-        image: "/assets/galleryImage1.png",
+        title: "Masjid Al-Jabbar",
+        subtitle: "Grand Central Mosque",
+        image: "/assets/maj.webp",
     },
     {
-        name: "Sana Raza",
-        role: "Head of Sales",
-        image: "/assets/galleryImage2.png",
+        title: "Grand Entrance Gateway",
+        subtitle: "Main Boulevard",
+        image: "/assets/IMG-20231027-WA0030-min.webp",
     },
     {
-        name: "Ravi Sharma",
-        role: "Senior Property Advisor",
-        image: "/assets/galleryImage3.png",
+        title: "Sports & Recreation",
+        subtitle: "World-Class Facilities",
+        image: "/assets/sports.webp",
     },
     {
-        name: "Priya Nair",
-        role: "Client Relations Manager",
-        image: "/assets/galleryImage4.png",
+        title: "Model Villas",
+        subtitle: "Completed Residential Units",
+        image: "/assets/IMG-20231027-WA0040-min.webp",
     },
 ];
 
@@ -39,7 +39,7 @@ export function AboutTeam() {
                         transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                     >
                         <span className="size-1.5 bg-zinc-900 inline-block" />
-                        <span className="text-sm text-zinc-900 tracking-wide">THE TEAM</span>
+                        <span className="text-sm text-zinc-900 tracking-wide">PROJECT HIGHLIGHTS</span>
                     </motion.div>
                     <div className="w-36 h-[1.5px] bg-gradient-to-r from-transparent via-zinc-900 to-transparent mt-3.5" />
                     <motion.h2
@@ -49,7 +49,7 @@ export function AboutTeam() {
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
                     >
-                        Meet the People Behind Your Dream Home
+                        Landmarks That Define Indus Enclave
                     </motion.h2>
                     <motion.p
                         className="text-zinc-500 text-sm md:text-base mt-3 max-w-md"
@@ -58,12 +58,12 @@ export function AboutTeam() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                     >
-                        Our team of dedicated advisors brings together decades of local market knowledge and an unwavering commitment to your satisfaction.
+                        From grand architectural landmarks to modern recreational facilities — explore what makes Indus Enclave a community like no other on the M-9 Motorway.
                     </motion.p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {team.map((member, i) => (
+                    {highlights.map((item, i) => (
                         <motion.div
                             key={i}
                             className="group flex flex-col overflow-hidden rounded-xl bg-white border border-zinc-100 shadow-sm hover:shadow-md transition-shadow duration-300"
@@ -74,15 +74,15 @@ export function AboutTeam() {
                         >
                             <div className="relative h-64 w-full overflow-hidden bg-zinc-100">
                                 <Image
-                                    src={member.image}
-                                    alt={member.name}
+                                    src={item.image}
+                                    alt={item.title}
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
                             </div>
                             <div className="p-5 flex flex-col gap-1">
-                                <h3 className="text-zinc-900 font-medium text-base">{member.name}</h3>
-                                <p className="text-zinc-500 text-sm">{member.role}</p>
+                                <h3 className="text-zinc-900 font-medium text-base">{item.title}</h3>
+                                <p className="text-zinc-500 text-sm">{item.subtitle}</p>
                             </div>
                         </motion.div>
                     ))}

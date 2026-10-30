@@ -16,7 +16,7 @@ export function AboutMission() {
                     transition={{ type: "spring", stiffness: 200, damping: 60, mass: 1 }}
                 >
                     <Image
-                        src="/assets/house.png"
+                        src="/hero-bg.webp"
                         alt="Indus Enclave — Our Mission"
                         fill
                         className="object-cover"

@@ -1,7 +1,8 @@
-﻿"use client";
+"use client";
 
 import { MoveRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export function AboutCta() {
@@ -11,20 +12,20 @@ export function AboutCta() {
                 <div className="relative w-full max-w-sm overflow-hidden md:max-w-[600px] h-[200px] md:h-[220px] mb-12 flex justify-center items-center md:overflow-visible group/cta-images select-none">
                     <Image
                         height={139} width={251}
-                        src="/assets/galleryImage1.png"
-                        alt="Indus Enclave Property 1"
+                        src="/assets/IMG-20231027-WA0048-min.webp"
+                        alt="Indus Enclave Aerial View"
                         className="absolute w-[200px] md:w-[251px] h-[100px] md:h-[139px] object-cover rounded-[10px] transition-all duration-500 ease-out z-0 origin-bottom-right -rotate-12 translate-x-[-115px] translate-y-4 group-hover/cta-images:translate-x-[-155px] group-hover/cta-images:rotate-[-16deg] group-hover/cta-images:translate-y-2"
                     />
                     <Image
                         height={139} width={251}
-                        src="/assets/galleryImage3.png"
-                        alt="Indus Enclave Property 3"
+                        src="/assets/IMG-20231027-WA0030-min.webp"
+                        alt="Indus Enclave Grand Entrance"
                         className="absolute w-[200px] md:w-[251px] h-[100px] md:h-[139px] object-cover rounded-[10px] transition-all duration-500 ease-out z-0 origin-bottom-left rotate-12 translate-x-[115px] translate-y-4 group-hover/cta-images:translate-x-[155px] group-hover/cta-images:rotate-16 group-hover/cta-images:translate-y-2"
                     />
                     <Image
                         height={139} width={251}
-                        src="/assets/galleryImage2.png"
-                        alt="Indus Enclave Property 2"
+                        src="/assets/maj.webp"
+                        alt="Masjid Al-Jabbar"
                         className="absolute w-[200px] md:w-[251px] h-[100px] md:h-[139px] object-cover rounded-[10px] transition-all duration-500 ease-out z-10 translate-y-[-10px] group-hover/cta-images:translate-y-[-22px] group-hover/cta-images:scale-105"
                     />
                 </div>
@@ -36,7 +37,7 @@ export function AboutCta() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
                 >
-                    Ready to Find Your Perfect Home With Us?
+                    Ready to Secure Your Plot at Indus Enclave?
                 </motion.h2>
 
                 <motion.p
@@ -46,19 +47,23 @@ export function AboutCta() {
                     viewport={{ once: true }}
                     transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    Let our experts guide you to the property that fits your lifestyle, your goals, and your future.
+                    Book your residential or commercial plot today with our 5-year easy installment plan. SBCA & SDA approved — your investment is 100% secure.
                 </motion.p>
 
-                <motion.button
-                    className="bg-black hover:bg-zinc-900 text-white text-sm px-5 py-3.5 rounded-lg transition-all duration-200 flex items-center gap-2 group cursor-pointer"
+                <motion.div
                     initial={{ y: 50, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                 >
-                    <span>Browse Properties</span>
-                    <MoveRight size={16} className="transition-transform duration-200 group-hover:translate-x-1" />
-                </motion.button>
+                    <Link
+                        href="/contact"
+                        className="bg-black hover:bg-zinc-900 text-white text-sm px-5 py-3.5 rounded-lg transition-all duration-200 flex items-center gap-2 group cursor-pointer"
+                    >
+                        <span>Book Your Plot Now</span>
+                        <MoveRight size={16} className="transition-transform duration-200 group-hover:translate-x-1" />
+                    </Link>
+                </motion.div>
             </div>
         </section>
     );

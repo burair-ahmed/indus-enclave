@@ -1,13 +1,13 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import CountUp from "@/components/count-number";
 
 const stats = [
-    { value: 5000, suffix: "+", label: "PROPERTIES SOLD" },
-    { value: 500, prefix: "$", suffix: "M+", label: "TOTAL SALES VOLUME" },
-    { value: 12, suffix: "+", label: "YEARS OF EXPERIENCE" },
-    { value: 98, suffix: "%", label: "CLIENT SATISFACTION" },
+    { value: 1000, suffix: "+", label: "FAMILIES TRUSTED US" },
+    { value: 100, suffix: "+", label: "ACRES OF DEVELOPMENT" },
+    { value: 5, suffix: "-Year", label: "EASY INSTALLMENT PLAN" },
+    { value: 100, suffix: "%", label: "SBCA & SDA APPROVED" },
 ];
 
 export function AboutStats() {
@@ -32,7 +32,7 @@ export function AboutStats() {
                     viewport={{ once: true }}
                     transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
                 >
-                    A Decade of Results That Speak for Themselves
+                    Building Sindh&apos;s Most Trusted Housing Community
                 </motion.h2>
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 mt-14">
@@ -46,7 +46,6 @@ export function AboutStats() {
                             transition={{ delay: i * 0.1, type: "spring", stiffness: 280, damping: 60, mass: 1 }}
                         >
                             <span className="text-4xl md:text-5xl text-zinc-900 font-light">
-                                {stat.prefix ?? ""}
                                 <CountUp from={0} to={stat.value} />
                                 {stat.suffix}
                             </span>

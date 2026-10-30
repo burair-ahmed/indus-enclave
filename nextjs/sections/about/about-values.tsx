@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { ShieldCheck, Handshake, Lightbulb, Heart } from "lucide-react";
@@ -6,27 +6,27 @@ import { ShieldCheck, Handshake, Lightbulb, Heart } from "lucide-react";
 const values = [
     {
         icon: <ShieldCheck className="size-5 text-zinc-700" />,
-        title: "Integrity First",
+        title: "Government-Approved Development",
         description:
-            "We operate with full transparency. No hidden fees, no fine print surprises — just honest advice you can rely on.",
+            "Indus Enclave is 100% approved by SBCA & SDA, ensuring complete legal security for every plot owner with transparent, hassle-free documentation.",
     },
     {
         icon: <Handshake className="size-5 text-zinc-700" />,
-        title: "Client Partnership",
+        title: "Affordable Ownership",
         description:
-            "Your goals are our goals. We listen first, then craft a personalised strategy that aligns with your vision and budget.",
+            "Our 5-year easy installment plan makes property ownership accessible to every family — no heavy down payments, no financial stress.",
     },
     {
         icon: <Lightbulb className="size-5 text-zinc-700" />,
-        title: "Market Expertise",
+        title: "Modern Infrastructure",
         description:
-            "Deep local knowledge combined with data-driven insights ensures you always make informed, confident decisions.",
+            "From wide boulevards and underground utilities to a grand mosque and sports complex, every amenity is designed to international standards.",
     },
     {
         icon: <Heart className="size-5 text-zinc-700" />,
-        title: "Community Focus",
+        title: "Community-Centered Living",
         description:
-            "We invest in the neighbourhoods we serve — because strong communities create lasting property value.",
+            "We are building more than plots — we are creating a vibrant community with parks, commercial hubs, and world-class facilities for families.",
     },
 ];
 
@@ -53,7 +53,7 @@ export function AboutValues() {
                             viewport={{ once: true }}
                             transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
                         >
-                            The Principles That Guide Everything We Do
+                            The Pillars Behind Indus Enclave&apos;s Vision
                         </motion.h2>
                     </div>
                     <motion.p
@@ -63,7 +63,7 @@ export function AboutValues() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.2, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                     >
-                        These values are not just words on a wall — they shape every interaction, every negotiation, and every decision we make on your behalf.
+                        These principles drive every decision at Al-Ashraf Group — from land acquisition and infrastructure planning to customer service and community development.
                     </motion.p>
                 </div>
 
