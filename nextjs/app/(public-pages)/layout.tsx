@@ -1,13 +1,18 @@
+import type { Metadata } from 'next';
 import React from 'react';
 import { Footer } from '@/components/footer';
 import { Navbar } from '@/components/navbar';
 import LenisScroll from '@/components/lenis-scroll';
 
-export const metadata = {
-    title: 'estate - PrebuiltUI',
-    description: 'estate is a real estate website template.',
+export const metadata: Metadata = {
+    title: {
+        default: 'Indus Enclave — Housing Project Karachi',
+        template: '%s - Indus Enclave',
+    },
+    description:
+        'Indus Enclave — A premier housing project by Al-Ashraf Group of Companies on M-9 Motorway, Karachi. Offering residential plots, commercial plots, and luxury villas with transparent payment plans.',
     appleWebApp: {
-        title: 'estate - PrebuiltUI',
+        title: 'Indus Enclave',
     },
 };
 
